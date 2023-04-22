@@ -1,0 +1,47 @@
+@use "vars-scss" as *;
+
+@mixin barGradient($isRotate, $color-dark, $color-light) {
+    $direction: bottom;
+    $shadow: 0 2px;
+
+    @if ($isRotate) {
+        $direction: left;
+        $shadow: -2px 0;
+    }
+
+    background: linear-gradient(to #{$direction}, $color-dark, $color-dark 12%, $color-light);
+    box-shadow: (inset 0 0 3px 2px $color-dark, inset #{$shadow} 2px 1px $white-overlay);
+}
+
+@mixin windowTitle() {
+    @include barGradient(false, $blue-max, $blue-vivid);
+    // border-radius: 8px 8px 0 0;
+    height: $winbar-height;
+    --font-display: Tahoma, sans-serif;
+    --header-primary: white;
+    text-shadow: 0 1px 1px black;
+}
+
+@mixin windowButton($size, $isRed: false) {
+    top: 0;
+    min-height: $size;
+    min-width: $size;
+    height: $size;
+    width: $size;
+    margin: 4px;
+    margin-left: 0;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+
+    @if $isRed {
+        background: radial-gradient(circle at 20% 20%, $white-overlay, $red-bright, $red-max);
+    } @else {
+        background: radial-gradient(circle at 20% 20%, $white-overlay, $blue-vivid, $blue-max);
+    }
+
+    &:active {
+        // transform: rotate(180deg);
+        // Look at how the buttons actually work
+    }
+}

@@ -1,22 +1,22 @@
-[light]: https://user-images.githubusercontent.com/29710355/231909647-72871e7f-8763-4174-9c71-5f1bb7d401bc.png
-[dark]: https://user-images.githubusercontent.com/29710355/231909520-b24c4301-2d90-4c6c-9e5d-ca9ce20e3ba6.png
+[light]: https://user-images.githubusercontent.com/29710355/233753957-b581ff4c-bb70-4f13-8504-b3a4dd5c57e8.png
+[dark]: https://user-images.githubusercontent.com/29710355/233753967-87358b2b-aa49-4056-a5a4-891de58756df.png
 
-# Template Discord Theme
-[![GitHub downloads](https://img.shields.io/github/downloads/saltssaumure/template-discord-theme/total?color=purple&label=GitHub%20downloads&style=flat-square)](https://github.com/Saltssaumure/template-discord-theme/releases/latest "Latest release")
-![Total size](https://img.shields.io/github/repo-size/saltssaumure/template-discord-theme?style=flat-square "Total size")
+# Logarithm Discord Theme
+[![GitHub downloads](https://img.shields.io/github/downloads/saltssaumure/xp2-discord-theme/total?color=purple&label=GitHub%20downloads&style=flat-square)](https://github.com/Saltssaumure/xp2-discord-theme/releases/latest "Latest release")
+![Total size](https://img.shields.io/github/repo-size/saltssaumure/xp2-discord-theme?style=flat-square "Total size")
 
-***A something something Discord theme.***
+***A(nother) Windows XP style Discord theme.***
 
-| Light mode                                                  | Dark mode                                                 |
-| ----------------------------------------------------------- | --------------------------------------------------------- |
-| ![Screenshot of Temp light mode applied to Discord][light] | ![Screenshot of Temp dark mode applied to Discord][dark] |
+| Light mode                                                      | Dark mode                                                     |
+| --------------------------------------------------------------- | ------------------------------------------------------------- |
+| ![Screenshot of Logarithm light mode applied to Discord][light] | ![Screenshot of Logarithm dark mode applied to Discord][dark] |
 
 ## Installation
 
 ### BetterDiscord
 1. Install [BetterDiscord](https://betterdiscord.app/).
 2. Download the theme file:
-    - [GitHub](https://github.com/Saltssaumure/template-discord-theme/releases/latest)
+    - [GitHub](https://github.com/Saltssaumure/xp2-discord-theme/releases/latest)
     - [BD Store](https://betterdiscord.app/theme/?id=000)
 3. Place theme file in BetterDiscord's theme folder:
     - Windows: `%AppData%/BetterDiscord/themes`
@@ -26,8 +26,8 @@
 ### Replugged
 1. Install [Replugged](https://replugged.dev/).
 2. Install the theme:
-    - [GitHub](https://github.com/Saltssaumure/template-discord-theme/releases/latest)
-    - [Replugged.dev](https://replugged.dev/install?identifier=Saltssaumure/template-discord-theme&source=github)
+    - [GitHub](https://github.com/Saltssaumure/xp2-discord-theme/releases/latest)
+    - [Replugged.dev](https://replugged.dev/install?identifier=Saltssaumure/xp2-discord-theme&source=github)
 
 ## Customisation (BD only)
 1. Open `Settings` > `Themes` menu in Discord.
@@ -40,9 +40,9 @@
 | Background colour | `--temp-bg-color` | Any CSS-recognised colour. | #000          |
 
 ## License
-[GNU General Public License v3.0](https://github.com/Saltssaumure/template-discord-theme/blob/main/LICENSE)
+[GNU General Public License v3.0](https://github.com/Saltssaumure/xp2-discord-theme/blob/main/LICENSE)
 - <span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, as long as you allow others to do the same with your version.
 
 ## Questions or suggestions?
-- Post [an issue](https://github.com/Saltssaumure/template-discord-theme/issues) on GitHub.
+- Post [an issue](https://github.com/Saltssaumure/xp2-discord-theme/issues) on GitHub.
 - Post in `#theme-support` on [my support server](https://discord.gg/uy8nKQVatp).

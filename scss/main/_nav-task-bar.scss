@@ -1,0 +1,57 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as box;
+
+.layers-OrUESM > .layer-86YKbF {
+    top: $winbar-height;
+    background: var(--xp2-background-2);
+
+    .platform-win & {
+        padding-top: 0;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+        width: 100vw;
+    }
+
+    // Space for navbar
+    &::before {
+        background: var(--xp2-background-2);
+        height: $navbar-height;
+    }
+
+    .container-1eFtFS {
+        height: calc(100vh - $navbar-height - $winbar-height - $taskbar-height);
+    }
+
+    // Space for taskbar
+    &::after {
+        @include box.windowTitle;
+        height: $taskbar-height;
+    }
+}
+
+// Pinned / DMs / search etc. from original titlebar
+.toolbar-3_r2xA {
+    position: fixed;
+    inset: $winbar-height 0 auto;
+    justify-content: flex-end;
+
+    &::before,
+    &::after {
+        content: "button";
+        display: block;
+        width: 70px;
+        background: green;
+        height: $navbar-height;
+        order: -2;
+    }
+
+    // Search bar
+    .search-39IXmY {
+        order: -1;
+        flex: 2;
+    }
+}

@@ -1,1 +1,12 @@
 @use "../top/vars-scss" as *;
+
+// Leave space for members list
+.content-1jQy2l:has(.container-2o3qEW) .chatContent-3KubbW {
+    padding-right: $memberlist-width;
+}
+
+// Chat
+.chatContent-3KubbW {
+    background: $chat-blue;
+
+}

@@ -2,17 +2,50 @@
 @use "main/chatbox";
 @use "main/forums";
 @use "main/friends";
-@use "main/headerbar";
 @use "main/members";
 @use "main/messages";
 @use "main/publicservers";
 @use "main/searchresults";
 @use "main/servers";
+@use "main/nav-task-bar";
 @use "main/threads";
+@use "main/winbar";
 @use "main/vc";
 
 @use "top/vars-scss" as *;
 
-:root {
-    color: red;
+// Titlebar
+.title-31SJ6t {
+    --__header-bar-background: #{$tabs-center-blue};
+    padding: 0 16px;
+
+    // Titlebar with members list open
+    .chat-2ZfjoI:has(.container-2o3qEW) & {
+        padding-right: $memberlist-width + 16px;
+    }
+
+    .children-3xh0VB .iconWrapper-2awDjA {
+        display: none;
+    }
+
+    .title-17SveM {
+        color: white;
+        &::before {
+            content: "#";
+        }
+    }
+
+    .divider-q3P9HC {
+        display: none;
+    }
+
+    .topic-11NuQZ {
+        color: white;
+        margin-left: 0;
+        font-size: 16px;
+        line-height: 20px;
+        &::before {
+            content: "- ";
+        }
+    }
 }

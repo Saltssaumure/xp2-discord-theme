@@ -1,0 +1,42 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as box;
+
+.titleBar-1it3bQ {
+    @include box.windowTitle();
+    margin-top: 0;
+    position: absolute;
+    inset: auto 0;
+
+    .wordmarkWindows-2dq6rw {
+        color: white;
+        padding-top: 2px;
+
+        &::before {
+            content: "Discord Messenger";
+            display: block;
+            position: relative;
+            font-size: 14px;
+            line-height: $winbar-height;
+            font-weight: 600;
+            font-family: Tahoma, sans-serif;
+            text-shadow: 0 1px 1px black;
+        }
+
+        &::after {
+            content: "cool image of discord logo";
+        }
+
+        svg {
+            display: none;
+        }
+    }
+
+    // Min / Max / Close buttons
+    .winButton-3UMjdg {
+        @include box.windowButton(20px);
+
+        &.winButtonClose-3Q8ZH5 {
+            @include box.windowButton(20px, $isRed: true);
+        }
+    }
+}
