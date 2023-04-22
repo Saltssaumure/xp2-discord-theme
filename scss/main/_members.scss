@@ -1,1 +1,40 @@
 @use "../top/vars-scss" as *;
+
+.container-2o3qEW {
+    position: absolute;
+    inset: (-$minibar-height) 0 0 auto;
+    height: auto;
+    z-index: 101;
+    --channels-default: var(--xp2-text);
+
+    &::before {
+        content: "Member List";
+        display: inline-block;
+        position: relative;
+        line-height: $minibar-height;
+        background: $tabs-blue;
+        color: white;
+        height: $minibar-height;
+        padding: 0 16px;
+        font-weight: bold;
+    }
+
+    .membersWrap-3NUR2t {
+        max-height: calc(100% - #{$minibar-height});
+    }
+
+    .membersWrap-3NUR2t,
+    .members-3WRCEx {
+        width: $memberlist-width;
+        
+    }
+
+    .member-2gU6Ar {
+        max-width: unset;
+    }
+
+    .member-48YF_l,
+    .members-3WRCEx {
+        background: var(--xp2-background);
+    }
+}

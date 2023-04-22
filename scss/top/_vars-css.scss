@@ -1,7 +1,19 @@
-.theme-dark {
+@use "vars-scss" as *;
 
+:root {
+    --font-primary: Tahoma, sans-serif;
+    --font-display: Tahoma, sans-serif;
+    --font-headline: Tahoma, sans-serif;
+}
+
+.theme-dark {
+    --xp2-background: black;
+    --xp2-background-2: #{$unbeige};
+    --xp2-text: white;
 }
 
 .theme-light {
-    
+    --xp2-background: white;
+    --xp2-background-2: #{$beige};
+    --xp2-text: black;
 }

@@ -1,15 +1,15 @@
-[light]: https://user-images.githubusercontent.com/29710355/231909647-72871e7f-8763-4174-9c71-5f1bb7d401bc.png
-[dark]: https://user-images.githubusercontent.com/29710355/231909520-b24c4301-2d90-4c6c-9e5d-ca9ce20e3ba6.png
+[light]: https://user-images.githubusercontent.com/29710355/233753957-b581ff4c-bb70-4f13-8504-b3a4dd5c57e8.png
+[dark]: https://user-images.githubusercontent.com/29710355/233753967-87358b2b-aa49-4056-a5a4-891de58756df.png
 
-# Tetrate Discord Theme
+# Logarithm Discord Theme
 [![GitHub downloads](https://img.shields.io/github/downloads/saltssaumure/xp2-discord-theme/total?color=purple&label=GitHub%20downloads&style=flat-square)](https://github.com/Saltssaumure/xp2-discord-theme/releases/latest "Latest release")
 ![Total size](https://img.shields.io/github/repo-size/saltssaumure/xp2-discord-theme?style=flat-square "Total size")
 
-***A something something Discord theme.***
+***A(nother) Windows XP style Discord theme.***
 
-| Light mode                                                  | Dark mode                                                 |
-| ----------------------------------------------------------- | --------------------------------------------------------- |
-| ![Screenshot of Tetrate light mode applied to Discord][light] | ![Screenshot of Tetrate dark mode applied to Discord][dark] |
+| Light mode                                                      | Dark mode                                                     |
+| --------------------------------------------------------------- | ------------------------------------------------------------- |
+| ![Screenshot of Logarithm light mode applied to Discord][light] | ![Screenshot of Logarithm dark mode applied to Discord][dark] |
 
 ## Installation
 

@@ -1,5 +1,15 @@
-// Window bars
-$title-height: 30px;
+@use "sass:math";
+
+// Sizes
+$winbar-height: 30px;
+$navbar-height: 48px;
+$minibar-height: 48px;
+$taskbar-height: 36px;
+
+$memberlist-width: 300px;
+$serverlist-width: 120px;
+$serveritem-width: 70px;
+$serverspacing-width: math.div($serverlist-width - $serveritem-width, 2);
 
 // General colours
 $blue-select: rgb(22, 101, 202);
@@ -17,5 +27,13 @@ $green-max: green;
 $beige: rgb(235, 232, 215);
 $beige-light: rgb(240, 239, 237);
 
+$unbeige: rgb(17, 34, 51);
+$unbeige-light: rgb(34, 51, 68);
+
 $white-overlay: hsla(0, 0%, 100%, 0.7);
 $black-overlay: hsla(0, 0%, 0%, 0.7);
+
+$channels-blue: rgb(106, 128, 218);
+$chat-blue: rgb(214, 224, 248);
+$tabs-blue: rgb(18, 66, 166);
+$tabs-center-blue: rgb(48, 106, 198);

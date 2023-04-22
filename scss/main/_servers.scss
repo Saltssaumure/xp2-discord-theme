@@ -1,1 +1,116 @@
 @use "../top/vars-scss" as *;
+@use "sass:math";
+
+// Servers sidebar
+.guilds-2JjMmN {
+    width: $serverlist-width;
+    background: $channels-blue;
+}
+
+// New message indicator
+.unreadMentionsIndicatorTop-2bTgUU,
+.unreadMentionsIndicatorBottom-3RJMnQ {
+    padding: $serverspacing-width;
+    width: $serverlist-width;
+}
+
+.unreadMentionsIndicatorTop-2bTgUU {
+    padding-top: 0;
+}
+
+.unreadMentionsIndicatorBottom-3RJMnQ {
+    padding-bottom: 0;
+}
+
+// DMs / servers divider
+.guildSeparator-a4uisj {
+    background: linear-gradient(to right, transparent, transparentize(white, 0.5), transparent);
+    height: 3px;
+    width: $serveritem-width + 20px;
+}
+
+// Open folder container
+[role="group"] {
+    height: auto !important;
+}
+
+// Open folder background
+body #app-mount .guilds-2JjMmN [class*="expandedFolderBackground"] {
+    opacity: 0.5;
+    border-radius: 4px;
+    left: $serverspacing-width;
+    width: $serveritem-width;
+}
+
+// Server / folder
+.listItem-3SmSlK {
+    margin-bottom: $serverspacing-width;
+    width: $serverlist-width;
+
+    .wrapper-2PSQCG,
+    .svg-2ifYOU {
+        width: $serveritem-width;
+        height: $serveritem-width;
+    }
+
+    .wrapper-2PSQCG {
+        box-shadow: 1px 1px 3px 2px rgb(48, 99, 180);
+    }
+
+    .svg-2ifYOU {
+        border-radius: 4px;
+        border: 3px solid rgb(201, 213, 225);
+        transition: border-color 0.2s ease-out;
+    }
+
+    // Colour border based on read/unread
+    // Has unread message
+    &:has(.item-2LIpTv[style*="height: 8px;"]) .svg-2ifYOU {
+        border-color: white;
+    }
+    // Has ping
+    &:has(.lowerBadge-3j0ZAg .numberBadge-37OJ3S) .svg-2ifYOU {
+        border-color: var(--status-danger);
+    }
+    // Hovered or current server
+    &:has(.item-2LIpTv[style*="height: 40px;"], .item-2LIpTv[style*="height: 20px;"]) .svg-2ifYOU {
+        border-color: orange;
+    }
+
+    .pill-2RsI5Q, .pill-L_aLMQ {
+        display: none;
+    }
+}
+
+// DMs
+.tutorialContainer-1pL9QS {
+    margin-top: $serverspacing-width;
+}
+
+// Add server and public servers
+:is(.tutorialContainer-2jwoiB, .tutorialContainer-2jwoiB + .listItem-3SmSlK) {
+    .wrapper-2PSQCG {
+        width: auto;
+        height: auto;
+        box-shadow: none;
+
+        &::before {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+
+    .svg-2ifYOU {
+        display: none;
+    }
+}
+
+.wrapper-2PSQCG::before {
+    .tutorialContainer-2jwoiB & {
+        content: "Add Server...";
+    }
+
+    .tutorialContainer-2jwoiB + .listItem-3SmSlK & {
+        content: "Public Servers";
+    }
+}

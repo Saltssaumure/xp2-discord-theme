@@ -2,7 +2,7 @@
 export default {
     meta: {
         /** The official name of your theme. */
-        name: "Tetrate",
+        name: "Logarithm",
         /** The name of your base scss file. */
         scss: "xp2",
         /** The name of your theme repository. */
