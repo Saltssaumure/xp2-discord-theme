@@ -68,7 +68,8 @@
 
         &:has([d^="M22 12"], [d^="M18 9"], [d^="M21.178 1.70703"], [d^="M5.43309 21"])::after {
             content: attr(aria-label);
-            color: black;
+            color: var(--xp2-text);
+            line-height: 24px;
         }
 
         // Threads
@@ -147,7 +148,7 @@
 
     &::after {
         content: attr(aria-label);
-        color: black;
+        color: var(--xp2-text);
         font-size: 16px;
     }
 }
