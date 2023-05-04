@@ -36,22 +36,47 @@
 // Pinned / DMs / search etc. from original titlebar
 .toolbar-3_r2xA {
     position: fixed;
-    inset: $winbar-height 0 auto;
+    inset: $winbar-height 0 auto ($navbar-button-width + 10px) * 2;
     justify-content: flex-end;
-
-    &::before,
-    &::after {
-        content: "button";
-        display: block;
-        width: 70px;
-        background: green;
-        height: $navbar-height;
-        order: -2;
-    }
+    height: $navbar-height;
 
     // Search bar
     .search-39IXmY {
         order: -1;
         flex: 2;
     }
+}
+
+// Mic and headphones from user panel
+.panels-3wFtMD .button-12Fmur:not(:last-child) {
+    position: fixed;
+    top: $winbar-height;
+    left: 0;
+    gap: 4px;
+    display: flex;
+    width: $navbar-button-width;
+    height: $navbar-height;
+
+    svg {
+        background-color: $green-lime;
+        background-image: radial-gradient(circle at bottom 20% right 20%, transparent 60%, $green-lime-light 80%),
+            radial-gradient(circle at top 20% left 20%, transparent 60%, $green-bright 80%);
+        box-shadow: inset 0 0 2px 1px $green-max;
+        color: white;
+        border-radius: 50%;
+        padding: 5px;
+    }
+
+    &:nth-child(2) {
+        left: $navbar-button-width + 10px;
+    }
+
+    &::after {
+        content: attr(aria-label);
+        color: black;
+    }
+}
+
+.platform-win .sidebar-1tnWFu {
+    overflow: visible;
 }

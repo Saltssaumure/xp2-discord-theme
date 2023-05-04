@@ -10,6 +10,7 @@ $memberlist-width: 300px;
 $serverlist-width: 120px;
 $serveritem-width: 70px;
 $serverspacing-width: math.div($serverlist-width - $serveritem-width, 2);
+$navbar-button-width: 80px;
 
 // General colours
 $blue-select: rgb(22, 101, 202);
@@ -21,8 +22,10 @@ $blue-bright: rgb(16, 140, 228);
 $red-bright: rgb(230, 77, 28);
 $red-max: rgb(199, 50, 7);
 
-$green-bright: rgb(56, 196, 56);
-$green-max: green;
+$green-bright: rgb(77, 196, 77);
+$green-lime: rgb(118, 196, 53);
+$green-lime-light: rgb(192, 245, 184);
+$green-max: rgb(6, 83, 6);
 
 $beige: rgb(235, 232, 215);
 $beige-light: rgb(240, 239, 237);
