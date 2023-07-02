@@ -8,7 +8,7 @@
 [Replugged]:        https://replugged.dev/
 [Vencord]:          https://github.com/Vendicated/Vencord
 
-[shield-donate]:    https://img.shields.io/badge/Donate-ko--fi-orange?style=flat-square&logo=kofi
+[shield-donate]:    https://img.shields.io/badge/Donate-ko--fi-orange?style=flat-square&logo=kofi&logoColor=orange
 [ko-fi]:            https://ko-fi.com/saltssaumure "Any amount is much appreciated!"
 
 [shield-total-dl]:  https://img.shields.io/github/downloads/saltssaumure/xp2-discord-theme/total?color=purple&label=Total%20GitHub%20downloads&style=flat-square
@@ -60,8 +60,8 @@
 
 ## Customisation
 
-| Description       | Variable name     | Valid values               | Default value |
-|-------------------|-------------------|----------------------------|---------------|
+| Description       | Variable name     | Valid values             | Default value |
+| ----------------- | ----------------- | ------------------------ | ------------- |
 | Background colour | `--temp-bg-color` | Any [colour][css-color]. | #000          |
 
 ### BetterDiscord
@@ -71,7 +71,7 @@
 
 ### Replugged
 1. Open `Settings` > `Replugged` > `Quick CSS`.
-3. Copy and paste line 15-25 of [`Logarithm.theme.css`][.theme.css].
+3. Copy and paste lines 15-25 of [`Logarithm.theme.css`][.theme.css].
 3. Edit the variable values and apply changes.
 
 ### Vencord
@@ -80,7 +80,7 @@
 #### Recommended method
 1. Open `Settings` > `Vencord` > `Vencord`.
 2. Toggle on `Enable Custom CSS` and click `Open QuickCSS File`.
-3. Copy and paste line 15-25 of [`Logarithm.theme.css`][.theme.css].
+3. Copy and paste lines 15-25 of [`Logarithm.theme.css`][.theme.css].
 4. Edit the variable values.
 
 ## License

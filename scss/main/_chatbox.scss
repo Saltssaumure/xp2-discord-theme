@@ -1,10 +1,9 @@
 @use "../top/vars-scss" as *;
 
-.form-3gdLxP {
-    // ;
-    
+.form-3gdLxP {  
     padding: 0;
     margin-top: -24px;
+    pointer-events: none;
 
     &::before {
         display: none;
@@ -16,6 +15,7 @@
         margin-bottom: 0;
         padding: 4px 0;
         background-clip: padding-box;
+        pointer-events: all;
 
         .webkit-QgSAqd {
             background: var(--xp2-background-2);
