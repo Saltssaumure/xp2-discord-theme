@@ -6,6 +6,7 @@
     height: auto;
     z-index: 101;
     --channels-default: var(--xp2-text);
+    background: var(--xp2-background);
 
     &::before {
         content: "Member List";
@@ -21,12 +22,12 @@
 
     .membersWrap-3NUR2t {
         max-height: calc(100% - #{$minibar-height});
+        border-left: 1px solid grey;
     }
 
     .membersWrap-3NUR2t,
     .members-3WRCEx {
         width: $memberlist-width;
-        
     }
 
     .member-2gU6Ar {
@@ -36,5 +37,23 @@
     .member-48YF_l,
     .members-3WRCEx {
         background: var(--xp2-background);
+    }
+
+    .name-3Vmqxm {
+        font-weight: 600;
+    }
+
+    .membersGroup-2eiWxl {
+        padding: 14px 8px 8px 16px;
+        text-transform: none;
+        font-size: 16px;
+
+        &::after {
+            content: "";
+            display: block;
+            height: 2px;
+            margin-top: 6px;
+            background: linear-gradient(to right, transparent, var(--xp2-background-2), transparent);
+        }
     }
 }

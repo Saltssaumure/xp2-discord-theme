@@ -4,16 +4,22 @@
     --font-primary: Tahoma, sans-serif;
     --font-display: Tahoma, sans-serif;
     --font-headline: Tahoma, sans-serif;
+
+    --xp2-scroll-gradient: linear-gradient(to right, #{$scroll-blue-light}, #{$scroll-blue-dark});
+    --scrollbar-auto-track: var(--xp2-background);
+    --scrollbar-thin-track: var(--xp2-background);
 }
 
 .theme-dark {
     --xp2-background: black;
     --xp2-background-2: #{$unbeige};
+    --xp2-background-chat: #{$chat-blue-dark};
     --xp2-text: white;
 }
 
 .theme-light {
     --xp2-background: white;
     --xp2-background-2: #{$beige};
+    --xp2-background-chat: #{$chat-blue-light};
     --xp2-text: black;
 }

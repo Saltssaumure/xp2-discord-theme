@@ -1,1 +1,70 @@
 @use "../top/vars-scss" as *;
+
+.form-3gdLxP {  
+    padding: 0;
+    margin-top: -24px;
+    pointer-events: none;
+
+    &::before {
+        display: none;
+    }
+
+    .channelTextArea-1FufC0 {
+        background: var(--xp2-background-2);
+        margin-top: 24px;
+        margin-bottom: 0;
+        padding: 4px 0;
+        background-clip: padding-box;
+        pointer-events: all;
+
+        .webkit-QgSAqd {
+            background: var(--xp2-background-2);
+
+            &::-webkit-scrollbar {
+                width: 0;
+            }
+        }
+    }
+
+    .sansAttachButton-1ERHue {
+        padding: 0 8px;
+        gap: 8px;
+
+        &:has(.uploadInput-YH_iku) {
+            padding-left: 0;
+        }
+    }
+
+    .textArea-2CLwUE {
+        background: var(--xp2-background);
+        box-shadow: inset 0 0 1px 1px grey;
+
+        .slateTextArea-27tjG0 {
+            padding: 10px;
+        }
+    }
+
+    // Upload button
+    .attachButton-_ACFSu {
+        margin-left: unset;
+        border: 1px solid $blue-select;
+        border-radius: 4px;
+        background: var(--xp2-background)
+            linear-gradient(transparentize($blue-select, 0.8), transparent 20%, transparent 80%, transparentize($blue-select, 0.7));
+        padding: 8px;
+
+        .attachButtonInner-2mwer8 {
+            display: none;
+        }
+
+        &::after {
+            content: "Attach";
+            color: var(--xp2-text);
+        }
+    }
+
+    // Typing / slowmode indicator
+    .base-3bcbY3 {
+        top: 0;
+    }
+}

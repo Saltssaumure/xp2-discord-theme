@@ -2,6 +2,7 @@
 
 .sidebar-1tnWFu .container-1NXEtd {
     background: var(--xp2-background);
+    border-left: 1px solid grey;
 }
 
 // Mini bar
@@ -33,6 +34,11 @@
     }
 }
 
+// Category
+.container-q97qHp {
+    text-transform: none;
+}
+
 // Channels
 .content-1gYQeQ {
     border-radius: 0;
@@ -41,6 +47,7 @@
     // Threads
     .typeThread-2Aqh6X & {
         margin-left: 32px;
+        padding-left: 0;
     }
 }
 
@@ -127,4 +134,32 @@
 .name-3BUDLf {
     background: var(--xp2-background-2);
     width: fit-content;
+}
+
+// User area
+.panels-3wFtMD {
+    height: 52px;
+    
+    .container-YkUktl {
+        background: $tabs-blue;
+        justify-content: space-between;
+    }
+
+    .title-338goq,
+    .subtext-2HDqJ7 {
+        color: white;
+    }
+
+    .button-12Fmur:last-child {
+        color: white;
+        width: auto;
+        svg {
+            display: none;
+        }
+
+        &::before {
+            content: "Settings";
+            text-decoration: underline;
+        }
+    }
 }

@@ -10,6 +10,7 @@ $memberlist-width: 300px;
 $serverlist-width: 120px;
 $serveritem-width: 70px;
 $serverspacing-width: math.div($serverlist-width - $serveritem-width, 2);
+$navbar-button-width: 90px;
 
 // General colours
 $blue-select: rgb(22, 101, 202);
@@ -21,8 +22,10 @@ $blue-bright: rgb(16, 140, 228);
 $red-bright: rgb(230, 77, 28);
 $red-max: rgb(199, 50, 7);
 
-$green-bright: rgb(56, 196, 56);
-$green-max: green;
+$green-bright: rgb(77, 196, 77);
+$green-lime: rgb(118, 196, 53);
+$green-lime-light: rgb(192, 245, 184);
+$green-max: rgb(6, 83, 6);
 
 $beige: rgb(235, 232, 215);
 $beige-light: rgb(240, 239, 237);
@@ -34,6 +37,10 @@ $white-overlay: hsla(0, 0%, 100%, 0.7);
 $black-overlay: hsla(0, 0%, 0%, 0.7);
 
 $channels-blue: rgb(106, 128, 218);
-$chat-blue: rgb(214, 224, 248);
+$chat-blue-light: rgb(216, 226, 248);
+$chat-blue-dark: rgb(7, 16, 39);
 $tabs-blue: rgb(18, 66, 166);
 $tabs-center-blue: rgb(48, 106, 198);
+
+$scroll-blue-light: rgb(199, 216, 255);
+$scroll-blue-dark: rgb(187, 206, 247);
