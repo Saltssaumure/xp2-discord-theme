@@ -31,6 +31,106 @@
         @include box.windowTitle;
         height: $taskbar-height;
     }
+
+    // User settings / start button
+    .container-YkUktl .button-12Fmur:last-child {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: fit-content;
+        @include box.barGradient(false, green, rgb(56, 196, 56));
+        justify-content: flex-start;
+        padding: 0 20px 0 12px;
+        gap: 7px;
+
+        height: $taskbar-height;
+        border-radius: 0 15px 15px 0 / 0 100% 100% 0;
+
+        .contents-3NembX {
+            display: none;
+        }
+
+        &::before,
+        &::after {
+            filter: drop-shadow(0 1px 2px black);
+        }
+
+        // Windows logo
+        &::before {
+            content: url("data:image/png;base64,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");
+            zoom: 0.7;
+        }
+
+        // Start text
+        &::after {
+            content: "settings";
+            color: white;
+            line-height: $taskbar-height;
+            font-style: oblique;
+            font-weight: 700;
+            font-size: 1.4rem;
+            font-family: "Franklin Gothic", "Arial Narrow", Arial, sans-serif;
+        }
+    }
+
+    // Activity
+    .activityPanel-9icbyU {
+        position: fixed;
+        bottom: 4px;
+        left: 160px;
+        background: $tab-blue;
+        border-radius: 4px;
+        box-shadow:
+            0 0 1px 0 $tabs-blue,
+            inset 2px 2px 2px 0 transparentize(white, 0.7);
+        border-bottom: 0;
+        padding: 0;
+        width: 180px;
+        padding: 0 12px;
+
+        // Logo
+        .gameIcon-2BIUJ3 {
+            box-sizing: border-box;
+            height: 28px;
+            width: 28px;
+            padding: 4px;
+            background-size: contain;
+            background-origin: content-box;
+            background-repeat: no-repeat;
+            filter: drop-shadow(1px 1px 1px $tabs-blue);
+        }
+
+        // Currently streaming
+        .liveBadge-3E8LQj {
+            background: $green-bright;
+            height: 8px;
+            width: 8px;
+            bottom: 0;
+            right: 0;
+        }
+
+        // Title
+        .info-88fTUI {
+            margin-left: 4px;
+            .title-338goq {
+                font-weight: normal;
+            }
+        }
+
+        // Start/stop streaming
+        .button-12Fmur {
+            height: 28px;
+            width: 28px;
+            visibility: hidden;
+
+            &:hover {
+                background: unset;
+            }
+        }
+        &:hover .button-12Fmur {
+            visibility: visible;
+        }
+    }
 }
 
 // Toolbars including thread toolbars

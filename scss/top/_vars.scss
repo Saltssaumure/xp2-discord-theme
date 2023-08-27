@@ -7,7 +7,7 @@ $minibar-height: 48px;
 $taskbar-height: 36px;
 
 $memberlist-width: 300px;
-$serverlist-width: 120px;
+$serverlist-width: 110px;
 $serveritem-width: 70px;
 $serverspacing-width: math.div($serverlist-width - $serveritem-width, 2);
 $navbar-button-width: 90px;
@@ -44,3 +44,5 @@ $tabs-center-blue: rgb(48, 106, 198);
 
 $scroll-blue-light: rgb(199, 216, 255);
 $scroll-blue-dark: rgb(187, 206, 247);
+
+$tab-blue: rgb(58, 128, 243);
