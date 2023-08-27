@@ -1,18 +1,18 @@
-@use "main/channels";
-@use "main/chatbox";
-@use "main/forums";
-@use "main/friends";
-@use "main/members";
-@use "main/messages";
-@use "main/publicservers";
-@use "main/searchresults";
-@use "main/servers";
-@use "main/nav-task-bar";
-@use "main/threads";
-@use "main/winbar";
-@use "main/vc";
+@forward "./channels";
+@forward "./chatbox";
+@forward "./forums";
+@forward "./friends";
+@forward "./members";
+@forward "./messages";
+@forward "./publicservers";
+@forward "./searchresults";
+@forward "./servers";
+@forward "./nav-task-bar";
+@forward "./threads";
+@forward "./winbar";
+@forward "./vc";
 
-@use "top/vars-scss" as *;
+@use "../top/vars" as *;
 
 // Titlebar
 .container-ZMc96U {

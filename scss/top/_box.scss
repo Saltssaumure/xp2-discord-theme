@@ -1,4 +1,4 @@
-@use "vars-scss" as *;
+@use "vars" as *;
 
 @mixin barGradient($isRotate, $color-dark, $color-light) {
     $direction: bottom;
