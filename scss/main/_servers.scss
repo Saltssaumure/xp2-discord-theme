@@ -22,7 +22,19 @@
     padding-bottom: 0;
 }
 
+// Folder, DMs icon, server icon
+.folder-241Joy,
+.folder-241Joy.hover-3m7-WT,
+.childWrapper-1j_1ub,
+.icon-3AqZ2e {
+    background: linear-gradient(to bottom, $tabs-blue, $channels-blue);
+    color: white;
+}
+
 // DMs / servers divider
+.tutorialContainer-1pL9QS + div[style] {
+    height: unset !important;
+}
 .guildSeparator-a4uisj {
     background: linear-gradient(to right, transparent, transparentize(white, 0.5), transparent);
     height: 3px;
@@ -36,7 +48,7 @@
 
 // Open folder background
 body #app-mount .guilds-2JjMmN [class*="expandedFolderBackground"] {
-    opacity: 0.5;
+    background: transparentize($tabs-blue, 0.5);
     border-radius: 4px;
     left: $serverspacing-width;
     width: $serveritem-width;
@@ -63,6 +75,12 @@ body #app-mount .guilds-2JjMmN [class*="expandedFolderBackground"] {
         transition: border-color 0.2s ease-out;
     }
 
+    // Upper badge
+    .base-3IDx3L {
+        background: orange;
+        border-radius: 4px;
+    }
+
     // Colour border based on read/unread
     // Has unread message
     &:has(.item-2LIpTv[style*="height: 8px;"]) .svg-2ifYOU {
@@ -76,7 +94,6 @@ body #app-mount .guilds-2JjMmN [class*="expandedFolderBackground"] {
     &:has(.item-2LIpTv[style*="height: 40px;"], .item-2LIpTv[style*="height: 20px;"]) .svg-2ifYOU {
         border-color: orange;
     }
-
     .pill-2RsI5Q,
     .pill-L_aLMQ {
         display: none;
@@ -86,6 +103,22 @@ body #app-mount .guilds-2JjMmN [class*="expandedFolderBackground"] {
 // DMs
 .tutorialContainer-1pL9QS {
     margin-top: $serverspacing-width;
+}
+
+// Dragged server
+.dragInner-1CUBf_,
+.target-1eRTCg.dragOver-1OKbo2::before,
+.centerTarget-S6BLFQ.dragOver-1OKbo2::before {
+    border-radius: 4px;
+    background: $tabs-blue;
+    box-shadow: none;
+}
+
+.target-1eRTCg.dragOver-1OKbo2::before {
+    top: 0;
+}
+.centerTarget-S6BLFQ.dragOver-1OKbo2:before {
+    top: 42px;
 }
 
 // Add server and public servers
@@ -105,7 +138,6 @@ body #app-mount .guilds-2JjMmN [class*="expandedFolderBackground"] {
         display: none;
     }
 }
-
 .wrapper-2PSQCG::before {
     .tutorialContainer-2jwoiB & {
         content: "Add Server...";
