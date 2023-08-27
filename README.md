@@ -9,7 +9,7 @@
 [Vencord]:          https://github.com/Vendicated/Vencord
 
 [shield-donate]:    https://img.shields.io/badge/Donate-ko--fi-orange?style=flat-square&logo=kofi&logoColor=orange
-[ko-fi]:            https://ko-fi.com/saltssaumure "Any amount is much appreciated!"
+[ko-fi]:            https://ko-fi.com/saltssaumure "Buy me a coffee!"
 
 [shield-bd-dl]:     https://img.shields.io/github/downloads/Saltssaumure/xp2-discord-theme/Logarithm.theme.css?color=purple&label=Downloads&style=flat-square
 [shield-asar-dl]:   https://img.shields.io/github/downloads/Saltssaumure/xp2-discord-theme/net.saltssaumure.Logarithm.asar?color=purple&label=Downloads&style=flat-square
