@@ -62,6 +62,12 @@
     text-decoration: underline;
     padding: 0 2px;
 
+    // Bold when unread
+    .modeUnread-3Cxepe &,
+    .modeUnread-3Cxepe:hover & {
+        font-weight: 600;
+    }
+
     // Channel icon
     &::before {
         // Text channels
@@ -79,7 +85,6 @@
 
 // Selected channel background
 .link-1_kTxV {
-    .wrapper-NhbLHG:hover &,
     .modeSelected-3DmyhH &,
     .modeSelected-3DmyhH:hover & {
         background: unset;
