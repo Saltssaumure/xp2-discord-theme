@@ -1,0 +1,7 @@
+@mixin icon($ICON, $PATHS...) {
+    @each $path in $PATHS {
+        .wrapper-NhbLHG:has(path[d^="#{$path}"]) & {
+            content: $ICON;
+        }
+    }
+}

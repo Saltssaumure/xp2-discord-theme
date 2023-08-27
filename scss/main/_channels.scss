@@ -1,4 +1,5 @@
 @use "../top/vars" as *;
+@use "../top/channel";
 
 .sidebar-1tnWFu .container-1NXEtd {
     background: var(--xp2-background);
@@ -40,7 +41,7 @@
 }
 
 // Channels
-.content-1gYQeQ {
+.wrapper-NhbLHG {
     border-radius: 0;
     padding-left: 0;
 
@@ -69,13 +70,14 @@
 
 // Respine time
 // Channels in categories, and channels in threadgroups
-:is(.containerDefault-3TQ5YN ~ .containerDefault-YUSmu3, .container-1Bj0eq .containerDefault-YUSmu3) .content-1gYQeQ::before {
+:is(.containerDefault-3TQ5YN ~ .containerDefault-YUSmu3, .container-1Bj0eq .containerDefault-YUSmu3) .wrapper-NhbLHG::before {
     content: "";
     display: block;
     align-self: flex-start;
     $size: 16px;
     width: $size;
     height: $size;
+    position: absolute;
 }
 
 // T-shaped spines
@@ -86,7 +88,7 @@
         .container-1Bj0eq .containerDefault-YUSmu3:not(:last-child)
     ) {
     // New spine border
-    .content-1gYQeQ {
+    .wrapper-NhbLHG {
         border-left: 1px dotted grey;
 
         // New spine
@@ -103,7 +105,7 @@
             ~ .containerDefault-YUSmu3:not(:has(+ .containerDefault-YUSmu3, + .container-1Bj0eq + .containerDefault-YUSmu3)),
         .container-1Bj0eq .containerDefault-YUSmu3:last-child
     ) {
-    .content-1gYQeQ {
+    .wrapper-NhbLHG {
         &::before {
             border: dotted grey;
             border-width: 0 0 1px 1px;
@@ -116,18 +118,31 @@
     border-left: 1px dotted grey;
 }
 
+// Channel icon
+.iconContainer-21RCa3 {
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+}
+
 // Channel name
-.channelName-3KPsGw {
+.name-28HaxV {
     text-decoration: underline;
 
+    // Channel icon
     &::before {
-        content: "#";
+        // Text channels
+        @include channel.icon("#", "M5.88657 21", "M14 8", "M5.43309 21", "M15.44 6.99992", "M14.4 7");
+        // Announcement channels
+        @include channel.icon("⩤", "M19.1 4", "M4.85 8.26445", "M19.0999 3.99994", "M16.6811 5.6591", "M15.84 5.84438");
+        // Forum channels
+        @include channel.icon("⟰", "M6.56929 14.6869", "M13 4");
+        // Voice channels
+        @include channel.icon("ᐗ", "M11.383 3.07904", "M15 12");
+        // Stage channels
+        @include channel.icon("◎", "M14 13", "M15 2.41495");
     }
-
-    // // Text channel only
-    // .content-1gYQeQ:has(path[d^="M5.88657 21"]) &::before {
-    //     content: "#";
-    // }
 }
 
 // Category name
