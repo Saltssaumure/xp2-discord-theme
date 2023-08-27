@@ -1,55 +1,4 @@
-@use "../top/vars" as *;
-@use "../top/channel";
-
-.sidebar-1tnWFu .container-1NXEtd {
-    background: var(--xp2-background);
-    border-left: 1px solid grey;
-}
-
-// Mini bar
-.container-1-ERn5 {
-    .header-3OsQeK,
-    .header-3OsQeK:hover {
-        background: $tabs-blue;
-    }
-}
-
-.container-1-ERn5.bannerVisible-Vkyg1I {
-    .header-3OsQeK,
-    .header-3OsQeK:hover {
-        background: transparentize($tabs-blue, 0.3);
-    }
-}
-
-// Header text
-.headerContent-2SNbie {
-    color: white;
-}
-
-// Special channels (server guide, etc.)
-.containerDefault-YUSmu3.wrapper-NhbLHG {
-    margin-left: 0;
-
-    .link-1_kTxV {
-        padding-left: 16px;
-    }
-}
-
-// Bring channels/threads closer together while maintaining original height
-.wrapper-NhbLHG {
-    padding: 0;
-
-    .mainContent-20q_Hp {
-        padding: 7px;
-    }
-}
-
-// Category name
-.name-3BUDLf {
-    background: var(--xp2-background-2);
-    width: fit-content;
-    text-transform: none;
-}
+@use "../../top/vars" as *;
 
 // Channels
 .wrapper-NhbLHG {
@@ -72,9 +21,17 @@
 .containerDefault-3TQ5YN ~ .container-1Bj0eq {
     margin-left: 24px;
 }
-
 .typeThread-2Aqh6X.wrapper-NhbLHG {
     margin-left: 16px;
+}
+
+// Bring channels/threads closer together while maintaining original height
+.wrapper-NhbLHG {
+    padding: 0;
+
+    .mainContent-20q_Hp {
+        padding: 7px;
+    }
 }
 
 // Remove original spine on threads
@@ -156,84 +113,4 @@
 // Thread group spines
 .container-1Bj0eq:has(+ .containerDefault-YUSmu3) {
     border-left: 1px dotted grey;
-}
-
-// Channel icon
-.iconContainer-21RCa3 {
-    opacity: 0;
-    position: absolute;
-    z-index: 1;
-    left: 0;
-}
-
-// Channel name
-.name-28HaxV {
-    text-decoration: underline;
-    padding: 0 2px;
-
-    // Channel icon
-    &::before {
-        // Text channels
-        @include channel.icon("#", "M5.88657 21", "M14 8", "M5.43309 21", "M15.44 6.99992", "M14.4 7");
-        // Announcement channels
-        @include channel.icon("⩤", "M19.1 4", "M4.85 8.26445", "M19.0999 3.99994", "M16.6811 5.6591", "M15.84 5.84438");
-        // Forum channels
-        @include channel.icon("⟰", "M6.56929 14.6869", "M13 4");
-        // Voice channels
-        @include channel.icon("ᐗ", "M11.383 3.07904", "M15 12");
-        // Stage channels
-        @include channel.icon("◎", "M14 13", "M15 2.41495");
-    }
-}
-
-// Selected channel background
-.link-1_kTxV {
-    .wrapper-NhbLHG:hover &,
-    .modeSelected-3DmyhH &,
-    .modeSelected-3DmyhH:hover & {
-        background: unset;
-    }
-}
-// Selected / connected channel background
-.modeSelected-3DmyhH,
-.modeSelected-3DmyhH:hover,
-.modeConnected-NrO4cP,
-.modeConnected-NrO4cP:hover {
-    .name-28HaxV {
-        background: $tabs-blue;
-        color: white;
-        font-weight: 500;
-        flex: none;
-    }
-    .children-1MGS9G {
-        margin-left: auto;
-    }
-}
-
-// User area
-.panels-3wFtMD {
-    height: 52px;
-
-    .container-YkUktl {
-        background: $tabs-blue;
-        justify-content: space-between;
-    }
-
-    .title-338goq,
-    .subtext-2HDqJ7 {
-        color: white;
-    }
-
-    .button-12Fmur:last-child {
-        color: white;
-        width: auto;
-        svg {
-            display: none;
-        }
-
-        &::before {
-            content: "Settings";
-            text-decoration: underline;
-        }
-    }
 }
