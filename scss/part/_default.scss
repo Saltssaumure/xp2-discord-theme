@@ -1,11 +1,11 @@
-@use "vars-scss" as *;
+@use "../top/vars" as *;
 
 :root {
     --font-primary: Tahoma, sans-serif;
     --font-display: Tahoma, sans-serif;
     --font-headline: Tahoma, sans-serif;
 
-    --xp2-scroll-gradient: linear-gradient(to right, #{$scroll-blue-light}, #{$scroll-blue-dark});
+    --xp2-scroll-gradient: linear-gradient(to right, var(--xp2-scroll-light), var(--xp2-scroll-dark));
     --scrollbar-auto-track: var(--xp2-background);
     --scrollbar-thin-track: var(--xp2-background);
 }
@@ -14,12 +14,20 @@
     --xp2-background: black;
     --xp2-background-2: #{$unbeige};
     --xp2-background-chat: #{$chat-blue-dark};
+    --xp2-background-hover: #112233;
     --xp2-text: white;
+
+    --xp2-scroll-dark: rgb(9, 30, 73);
+    --xp2-scroll-light: rgb(14, 43, 110);
 }
 
 .theme-light {
     --xp2-background: white;
     --xp2-background-2: #{$beige};
     --xp2-background-chat: #{$chat-blue-light};
+    --xp2-background-hover: #d3d3d3;
     --xp2-text: black;
+
+    --xp2-scroll-dark: rgb(187, 206, 247);
+    --xp2-scroll-light: rgb(199, 216, 255);
 }

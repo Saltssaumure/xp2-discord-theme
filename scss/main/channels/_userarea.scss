@@ -1,0 +1,47 @@
+@use "../../top/vars" as *;
+@use "../../top/box";
+
+// User area
+.panels-3wFtMD {
+    z-index: unset;
+
+    // Activity panel, see nav-task-bar
+
+    // Voice connection
+    .container-1zzFcN {
+        background: $tabs-center-blue;
+
+        .rtcConnectionStatusLabel-Nodt6L,
+        .rtcConnectionStatus-c5A6Av .pingForeground-1BRBTc {
+            color: white;
+        }
+    }
+
+    // User info
+    .container-YkUktl {
+        height: 52px;
+        background: $tabs-blue;
+        justify-content: space-between;
+
+        // Settings as ref-accurate text
+        // .button-12Fmur:last-child {
+        //     color: white;
+        //     width: auto;
+        //     svg {
+        //         display: none;
+        //     }
+
+        //     &::before {
+        //         content: "Settings";
+        //         text-decoration: underline;
+        //     }
+        // }
+
+        // Settings as start button, see nav-task-bar
+    }
+
+    .title-338goq,
+    .subtext-2HDqJ7 {
+        color: white;
+    }
+}

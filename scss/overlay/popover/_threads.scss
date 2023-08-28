@@ -1,0 +1,9 @@
+@use "../../top/box";
+
+.container-18GwIk {
+    @include box.windowBox($VERTICAL-OFFSET: 0);
+
+    .header-3_zmOb {
+        @include box.windowTitle;
+    }
+}

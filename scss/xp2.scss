@@ -1,8 +1,6 @@
-@use "top/vars-css";
-
-@use "main";
-@use "overlay";
-@use "part";
-@use "plugin";
+@use "./main";
+@use "./overlay";
+@use "./part";
+@use "./plugin";
 
 @import url("https://minidiscordthemes.github.io/Squared/sq.min.css");
