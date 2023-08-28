@@ -1,5 +1,14 @@
-@forward "./tooltips";
-@forward "./popovers";
-@forward "./modals";
+@forward "./modal";
+@forward "./popover";
 @forward "./settings";
 @forward "./userprofile";
+
+@use "../top/vars" as *;
+
+.layer-2BGhQ8 {
+    --background-primary: var(--xp2-background-chat);
+    --background-secondary: var(--xp2-background);
+    --background-tertiary: var(--xp2-background-2);
+    --background-secondary-alt: var(--xp2-background-chat);
+    --background-floating: var(--xp2-background);
+}
