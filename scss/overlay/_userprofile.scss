@@ -1,0 +1,11 @@
+@use "../top/vars" as *;
+@use "../top/box";
+
+.userProfileOuter-2tQwNf {
+    @include box.windowHasPseudoTitle("User Profile", $OFFSET: 0);
+}
+
+.userProfileInnerThemedNonPremium-2AJg-H {
+    --profile-body-background-color: var(--xp2-background-2);
+    background: var(--xp2-background);
+}
