@@ -13,7 +13,7 @@
     box-shadow: (inset 0 0 3px 2px $color-dark, inset #{$shadow} 2px 1px $white-overlay);
 }
 
-@mixin windowTitle() {
+@mixin windowTitle {
     @include barGradient(false, $blue-max, $blue-vivid);
     // border-radius: 8px 8px 0 0;
     height: $winbar-height;
@@ -43,5 +43,32 @@
     &:active {
         // transform: rotate(180deg);
         // Look at how the buttons actually work
+    }
+}
+
+@mixin windowBox($VERTICAL-OFFSET) {
+    border: 2px solid $blue-max;
+    border-top: 0;
+    box-shadow: 2px $VERTICAL-OFFSET 3px 2px $black-overlay;
+}
+
+@mixin windowHasPseudoTitle($TITLE, $OFFSET: -2px) {
+    @include windowBox($VERTICAL-OFFSET: 0);
+
+    &::before {
+        content: $TITLE;
+        display: block;
+        position: absolute;
+        z-index: 1;
+        inset: -($winbar-height $OFFSET) auto $OFFSET;
+        font-size: 14px;
+        line-height: $winbar-height;
+        font-weight: 600;
+        font-family: Tahoma, sans-serif;
+        text-shadow: 0 1px 1px black;
+        color: white;
+        text-indent: 9px;
+        @include windowTitle;
+        border-radius: 8px 8px 0 0;
     }
 }

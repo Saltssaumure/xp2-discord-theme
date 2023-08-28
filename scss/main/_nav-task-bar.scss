@@ -1,7 +1,7 @@
 @use "../top/vars" as *;
 @use "../top/box";
 
-.layers-OrUESM > .layer-86YKbF {
+.layers-OrUESM > .baseLayer-W6S8cY {
     top: $winbar-height;
     background: var(--xp2-background-2);
 
@@ -30,10 +30,12 @@
     &::after {
         @include box.windowTitle;
         height: $taskbar-height;
+        z-index: 102;
     }
 
     // User settings / start button
     .container-YkUktl .button-12Fmur:last-child {
+        z-index: 103;
         position: fixed;
         left: 0;
         bottom: 0;
@@ -75,6 +77,7 @@
 
     // Activity
     .activityPanel-9icbyU {
+        z-index: 103;
         position: fixed;
         bottom: 4px;
         left: 160px;
