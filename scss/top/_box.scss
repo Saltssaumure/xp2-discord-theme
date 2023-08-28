@@ -49,7 +49,6 @@
 @mixin windowBox($VERTICAL-OFFSET) {
     border: 2px solid $blue-max;
     border-top: 0;
-    box-shadow: 2px $VERTICAL-OFFSET 3px 2px $black-overlay;
 }
 
 @mixin windowHasPseudoTitle($TITLE, $OFFSET: -2px) {
