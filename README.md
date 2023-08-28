@@ -20,6 +20,18 @@
 [license]:          https://github.com/Saltssaumure/xp2-discord-theme/blob/main/LICENSE
 [.theme.css]:       https://github.com/Saltssaumure/xp2-discord-theme/blob/main/Logarithm.theme.css
 
+[sq]:               https://github.com/MiniDiscordThemes/Squared
+[sq-author]:        https://github.com/Saltssaumure
+[sq-license]:       https://github.com/MiniDiscordThemes/Squared/blob/main/LICENSE
+
+[rs]:               https://github.com/DiscordStyles/RadialStatus
+[rs-author]:        https://github.com/Gibbu
+[rs-license]:       https://github.com/DiscordStyles/RadialStatus/blob/master/LICENSE.md
+
+[xp]:               https://github.com/Saltssaumure/xp-discord-theme
+[xp-author]:        https://github.com/Saltssaumure
+[xp-license]:       https://github.com/Saltssaumure/xp-discord-theme/blob/main/LICENSE
+
 [release-bd]:       https://betterdiscord.app/theme/?id=000 "BetterDiscord store page"
 [release-rp]:       https://replugged.dev/store/net.saltssaumure.Logarithm "Replugged store page"
 [release-bd-gh]:    https://github.com/Saltssaumure/xp2-discord-theme/releases/latest/download/Logarithm.theme.css "Get latest release"
@@ -100,6 +112,11 @@
 ## License
 [GNU General Public License v3.0][license]
 - <span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, as long as you allow others to do the same with your version.
+
+### Includes
+- [Exponent][xp] by [Saltssaumure][xp-author] - [GPL-3.0 License][xp-license]
+- [Squared][sq] by [Saltssaumure][sq-author] - [MIT License][sq-license]
+- [RadialStatus][rs] by [Gibbu][rs-author] - [MIT License][rs-license]
 
 ## Questions or suggestions?
 - Post [an issue][issues] on GitHub.
