@@ -1,6 +1,6 @@
 @use "../top/vars" as *;
 
-.form-3gdLxP {
+:is(.form-3gdLxP, .form-3qe0Ni) {
     padding: 0;
     margin-top: -24px;
     pointer-events: none;
@@ -9,7 +9,7 @@
         display: none;
     }
 
-    .channelTextArea-1FufC0 {
+    :is(.channelTextArea-1FufC0, .channelTextArea-1deLlK) {
         background: var(--xp2-background-2);
         margin-top: 24px;
         margin-bottom: 0;

@@ -8,7 +8,7 @@
     // Activity panel, see nav-task-bar
 
     // Voice connection
-    .container-1zzFcN {
+    :is(.container-1zzFcN, .container-2NLBJg) {
         background: $tabs-center-blue;
 
         .rtcConnectionStatusLabel-Nodt6L,
@@ -18,7 +18,7 @@
     }
 
     // User info
-    .container-YkUktl {
+    :is(.container-YkUktl, .container-1CH86i) {
         height: 52px;
         background: $tabs-blue;
         justify-content: space-between;
