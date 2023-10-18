@@ -7,7 +7,7 @@
     "discordID": "134142022092062720",
     "github": "Saltssaumure"
   },
-  "version": "1.0.0",
+  "version": "1.1.0",
   "updater": {
     "type": "store",
     "id": "net.saltssaumure.Logarithm"
@@ -16,5 +16,7 @@
   "type": "replugged-theme",
   "main": "scss/xp2.scss",
   "source": "https://github.com/Saltssaumure/xp-discord-theme",
-  "image": ["https://cdn.discordapp.com/attachments/946226984005025835/1140494116451532810/template1.png"]
+  "image": [
+    "https://cdn.discordapp.com/attachments/946226984005025835/1140494116451532810/template1.png"
+  ]
 }
