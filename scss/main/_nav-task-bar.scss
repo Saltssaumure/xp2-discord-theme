@@ -34,7 +34,7 @@
     }
 
     // User settings / start button
-    .container-YkUktl .button-12Fmur:last-child {
+    :is(.container-YkUktl, .container-1CH86i) .button-12Fmur:last-child {
         z-index: 103;
         position: fixed;
         left: 0;
@@ -92,7 +92,7 @@
         padding: 0 12px;
 
         // Logo
-        .gameIcon-2BIUJ3 {
+        :is(.gameIcon-2BIUJ3, .gameIcon-20i5qA) {
             box-sizing: border-box;
             height: 28px;
             width: 28px;
@@ -104,7 +104,7 @@
         }
 
         // Currently streaming
-        .liveBadge-3E8LQj {
+        :is(.liveBadge-3E8LQj, .liveBadge-3oAcdT) {
             background: $green-bright;
             height: 8px;
             width: 8px;
@@ -113,7 +113,7 @@
         }
 
         // Title
-        .info-88fTUI {
+        :is(.info-88fTUI, .info-2PZl4A) {
             margin-left: 4px;
             .title-338goq {
                 font-weight: normal;
@@ -220,7 +220,7 @@
 }
 
 // Pinned / DMs / search etc. from original titlebar
-.title-31SJ6t .toolbar-3_r2xA {
+:is(.title-31SJ6t, .title-5wgnIa) .toolbar-3_r2xA {
     position: fixed;
     inset: $winbar-height 0 auto ($navbar-button-width + 10px) * 2;
     justify-content: flex-end;

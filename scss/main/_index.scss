@@ -20,7 +20,7 @@
     --__header-bar-background: #{$tabs-center-blue};
 
     // Titlebar with members list open
-    .chat-2ZfjoI:has(.container-2o3qEW) & {
+    :is(.chat-2ZfjoI, .chat-9g_3Xj):has(:is(.container-2o3qEW, .container-2vWgD2)) & {
         padding-right: $memberlist-width + 16px;
     }
 
