@@ -15,31 +15,31 @@
 @use "../top/vars" as *;
 
 // Titlebar
-.container-ZMc96U {
+.container__11d72 {
     padding: 0 16px;
     --__header-bar-background: #{$tabs-center-blue};
 
     // Titlebar with members list open
-    :is(.chat-2ZfjoI, .chat-9g_3Xj):has(:is(.container-2o3qEW, .container-2vWgD2)) & {
+    .chat__52833:has(.container_b2ce9c) & {
         padding-right: $memberlist-width + 16px;
     }
 
-    .children-3xh0VB .iconWrapper-2awDjA {
+    .children__32014 .iconWrapper_af9215 {
         display: none;
     }
 
-    .title-17SveM {
+    .title__9e2b0 {
         color: white;
         &::before {
             content: "#";
         }
     }
 
-    .divider-q3P9HC {
+    .divider_c09b64 {
         display: none;
     }
 
-    .topic-11NuQZ {
+    .topic__16ae3 {
         color: white;
         margin-left: 0;
         font-size: 16px;

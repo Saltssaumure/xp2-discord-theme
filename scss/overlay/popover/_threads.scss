@@ -1,9 +1,9 @@
 @use "../../top/box";
 
-.container-18GwIk {
+.container__8261a {
     @include box.windowBox($VERTICAL-OFFSET: 0);
 
-    .header-3_zmOb {
+    .header__53b07 {
         @include box.windowTitle;
     }
 }

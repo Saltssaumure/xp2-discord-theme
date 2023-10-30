@@ -1,28 +1,28 @@
 @use "../top/vars" as *;
 
 // Scrollbars always visible
-.fade-27X6bG::-webkit-scrollbar-thumb,
-.fade-27X6bG::-webkit-scrollbar-track {
+.fade_ba0fa0::-webkit-scrollbar-thumb,
+.fade_ba0fa0::-webkit-scrollbar-track {
     visibility: visible;
 }
 
-.scroller-kQBbkU::-webkit-scrollbar-track {
+.scroller__1f96e::-webkit-scrollbar-track {
     margin-bottom: 0;
 }
 
-.codeView-12LUIl::-webkit-scrollbar-track {
+.codeView__8b1ff::-webkit-scrollbar-track {
     margin: 0;
 }
 
-:not(.none-1rXy4P)::-webkit-scrollbar {
+:not(.none__51a8f)::-webkit-scrollbar {
     border: 1px solid var(--xp2-background-hover);
     background: var(--xp2-background);
     width: 18px;
     height: 18px;
 }
 
-.thin-RnSY0a::-webkit-scrollbar-track,
-.auto-2TJ1RH::-webkit-scrollbar-track {
+.thin_b1c063::-webkit-scrollbar-track,
+.auto_a48086::-webkit-scrollbar-track {
     border: 0;
 }
 
@@ -35,8 +35,8 @@
 }
 
 // Thumb
-.thin-RnSY0a::-webkit-scrollbar-thumb,
-.auto-2TJ1RH::-webkit-scrollbar-thumb {
+.thin_b1c063::-webkit-scrollbar-thumb,
+.auto_a48086::-webkit-scrollbar-thumb {
     @include scrollPiece;
 }
 
