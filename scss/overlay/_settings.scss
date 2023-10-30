@@ -8,18 +8,18 @@
 @use "../top/box";
 
 // Undo hiding base layer when settings appears
-.layers-OrUESM > .layer-86YKbF {
+.layers__1c917 > .layer__2efaa {
     opacity: 1 !important;
     transform: none !important;
     animation: none;
 }
 
-.layer-86YKbF:not(.baseLayer-W6S8cY) {
+.layer__2efaa :not(.baseLayer__8fda3) {
     background: transparentize(black, 0.3);
     z-index: 101;
     pointer-events: none;
 
-    .standardSidebarView-E9Pc3j {
+    .standardSidebarView__1129a {
         top: 20vh;
         right: unset;
         bottom: $taskbar-height;
@@ -35,29 +35,29 @@
     }
 
     // Settings sidebar
-    .sidebarRegion-1VBisG {
+    .sidebarRegion__60457 {
         flex: 0 0 auto;
 
         --background-modifier-selected: #{$blue-select};
         --background-modifier-hover: var(--xp2-background-hover);
 
-        .sidebarRegionScroller-FXiQOh {
+        .sidebarRegionScroller__1fa7e {
             background: var(--xp2-background);
         }
 
-        .sidebar-nqHbhN {
+        .sidebar__9e3e2 {
             padding: 16px 0;
         }
     }
 
     // Settings options
-    .contentRegion-3HkfJJ {
+    .contentRegion__0bec1 {
         --background-primary: var(--xp2-background);
         --background-secondary: var(--xp2-background);
         --background-tertiary: var(--xp2-background-chat);
         --background-secondary-alt: var(--xp2-background-chat);
 
-        .contentRegionScroller-2_GT_N {
+        .contentRegionScroller__86c79 {
             background: var(--xp2-background-2);
         }
     }

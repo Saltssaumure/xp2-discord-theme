@@ -1,7 +1,7 @@
 @use "../top/vars" as *;
 @use "../top/box";
 
-.layers-OrUESM > .baseLayer-W6S8cY {
+.layers__1c917 > .baseLayer__8fda3 {
     top: $winbar-height;
     background: var(--xp2-background-2);
 
@@ -22,7 +22,7 @@
         height: $navbar-height;
     }
 
-    .container-1eFtFS {
+    .container__037ed {
         height: calc(100vh - $navbar-height - $winbar-height - $taskbar-height);
     }
 
@@ -34,7 +34,7 @@
     }
 
     // User settings / start button
-    :is(.container-YkUktl, .container-1CH86i) .button-12Fmur:last-child {
+    .container_ca50b9 .button__4f306:last-child {
         z-index: 103;
         position: fixed;
         left: 0;
@@ -48,7 +48,7 @@
         height: $taskbar-height;
         border-radius: 0 15px 15px 0 / 0 100% 100% 0;
 
-        .contents-3NembX {
+        .contents_fb6220 {
             display: none;
         }
 
@@ -76,7 +76,7 @@
     }
 
     // Activity
-    .activityPanel-9icbyU {
+    .activityPanel__22355 {
         z-index: 103;
         position: fixed;
         bottom: 4px;
@@ -92,7 +92,7 @@
         padding: 0 12px;
 
         // Logo
-        :is(.gameIcon-2BIUJ3, .gameIcon-20i5qA) {
+        .gameIcon_f12921 {
             box-sizing: border-box;
             height: 28px;
             width: 28px;
@@ -104,7 +104,7 @@
         }
 
         // Currently streaming
-        :is(.liveBadge-3E8LQj, .liveBadge-3oAcdT) {
+        .liveBadge_b936d2 {
             background: $green-bright;
             height: 8px;
             width: 8px;
@@ -113,15 +113,15 @@
         }
 
         // Title
-        :is(.info-88fTUI, .info-2PZl4A) {
+        .info_c28002 {
             margin-left: 4px;
-            .title-338goq {
+            .title__10613 {
                 font-weight: normal;
             }
         }
 
         // Start/stop streaming
-        .button-12Fmur {
+        .button__4f306 {
             height: 28px;
             width: 28px;
             visibility: hidden;
@@ -130,16 +130,16 @@
                 background: unset;
             }
         }
-        &:hover .button-12Fmur {
+        &:hover .button__4f306 {
             visibility: visible;
         }
     }
 }
 
 // Toolbars including thread toolbars
-.toolbar-3_r2xA {
+.toolbar__88c63 {
     // Icons
-    .iconWrapper-2awDjA {
+    .iconWrapper_af9215 {
         display: flex;
         gap: 4px;
 
@@ -220,25 +220,25 @@
 }
 
 // Pinned / DMs / search etc. from original titlebar
-:is(.title-31SJ6t, .title-5wgnIa) .toolbar-3_r2xA {
+.title_b7d661 .toolbar__88c63 {
     position: fixed;
     inset: $winbar-height 0 auto ($navbar-button-width + 10px) * 2;
     justify-content: flex-end;
     height: $navbar-height;
 
     // Search bar
-    .search-39IXmY {
+    .search__07df0 {
         order: -1;
         flex: 2;
 
-        .searchBar-jGtisZ {
+        .searchBar_e0c60b {
             background: white;
             border: 1px solid grey;
         }
     }
 
     // Icons
-    .iconWrapper-2awDjA {
+    .iconWrapper_af9215 {
         &:has([d^="M22 12"], [d^="M18 9"], [d^="M21.178 1.70703"], [d^="M5.43309 21"], [d^="M7 12.001"])::after {
             color: var(--xp2-text);
         }
@@ -246,7 +246,7 @@
 }
 
 // Mic and headphones from user panel
-.panels-3wFtMD .button-12Fmur:not(:last-child) {
+.panels__58331 .button__4f306:not(:last-child) {
     position: fixed;
     top: $winbar-height;
     left: 0;
@@ -276,6 +276,6 @@
     }
 }
 
-.platform-win .sidebar-1tnWFu {
+.platform-win .sidebar_ded4b5 {
     overflow: visible;
 }

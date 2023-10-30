@@ -4,53 +4,53 @@
 @use "../../top/vars" as *;
 @use "../../top/channel";
 
-.sidebar-1tnWFu .container-1NXEtd {
+.sidebar_ded4b5 .container__590e2 {
     background: var(--xp2-background);
     border-left: 1px solid grey;
 }
 
 // Mini bar
-.container-1-ERn5 {
-    .header-3OsQeK,
-    .header-3OsQeK:hover {
+.container__7c79d {
+    .header__104ca,
+    .header__104ca:hover {
         background: $tabs-blue;
     }
 }
-.container-1-ERn5.bannerVisible-Vkyg1I {
-    .header-3OsQeK,
-    .header-3OsQeK:hover {
+.container__7c79d.bannerVisible__191f6 {
+    .header__104ca,
+    .header__104ca:hover {
         background: transparentize($tabs-blue, 0.3);
     }
 }
 
 // Header text
-.headerContent-2SNbie {
+.headerContent_ee8727 {
     color: white;
 }
 
 // Special channels (server guide, etc.)
-.containerDefault-YUSmu3.wrapper-NhbLHG {
+.containerDefault__3187b.wrapper__7bcde {
     margin-left: 0;
 
-    .link-1_kTxV {
+    .link__95dc0 {
         padding-left: 16px;
     }
 }
 
 // Category name
-.name-3BUDLf {
+.name__590d6 {
     background: var(--xp2-background-2);
     width: fit-content;
     text-transform: none;
 }
 
 // Unread pip
-.unread-36eUEm {
+.unread__48cf4 {
     display: none;
 }
 
 // Channel icon
-.iconContainer-21RCa3 {
+.iconContainer__3f9b0 {
     opacity: 0;
     position: absolute;
     z-index: 1;
@@ -58,13 +58,13 @@
 }
 
 // Channel name
-.name-28HaxV {
+.name__8d1ec {
     text-decoration: underline;
     padding: 0 2px;
 
     // Bold when unread
-    .modeUnread-3Cxepe &,
-    .modeUnread-3Cxepe:hover & {
+    .modeUnread_f74c03 &,
+    .modeUnread_f74c03:hover & {
         font-weight: 600;
     }
 
@@ -84,24 +84,24 @@
 }
 
 // Selected channel background
-.link-1_kTxV {
-    .modeSelected-3DmyhH &,
-    .modeSelected-3DmyhH:hover & {
+.link__95dc0 {
+    .modeSelected__487d6 &,
+    .modeSelected__487d6:hover & {
         background: unset;
     }
 }
 // Selected / connected channel background
-.modeSelected-3DmyhH,
-.modeSelected-3DmyhH:hover,
-.modeConnected-NrO4cP,
-.modeConnected-NrO4cP:hover {
-    .name-28HaxV {
+.modeSelected__487d6,
+.modeSelected__487d6:hover,
+.modeConnected__1c02e,
+.modeConnected__1c02e:hover {
+    .name__8d1ec {
         background: $tabs-blue;
         color: white;
         font-weight: 500;
         flex: none;
     }
-    .children-1MGS9G {
+    .children_a486f8 {
         margin-left: auto;
     }
 }

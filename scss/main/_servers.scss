@@ -2,40 +2,40 @@
 @use "sass:math";
 
 // Servers sidebar
-.guilds-2JjMmN {
+.guilds__2b93a {
     width: $serverlist-width;
     background: $channels-blue;
 }
 
 // New message indicator
-.unreadMentionsIndicatorTop-2bTgUU,
-.unreadMentionsIndicatorBottom-3RJMnQ {
+.unreadMentionsIndicatorTop_ada847,
+.unreadMentionsIndicatorBottom_fdb943 {
     padding: $serverspacing-width;
     width: $serverlist-width;
 }
 
-.unreadMentionsIndicatorTop-2bTgUU {
+.unreadMentionsIndicatorTop_ada847 {
     padding-top: 0;
 }
 
-.unreadMentionsIndicatorBottom-3RJMnQ {
+.unreadMentionsIndicatorBottom_fdb943 {
     padding-bottom: 0;
 }
 
 // Folder, DMs icon, server icon
-.folder-241Joy,
-.folder-241Joy.hover-3m7-WT,
-.childWrapper-1j_1ub,
-.icon-3AqZ2e {
+.folder__17546,
+.folder__17546.hover__043de,
+.childWrapper__01b9c,
+.icon__0cbed {
     background: linear-gradient(to bottom, $tabs-blue, $channels-blue);
     color: white;
 }
 
 // DMs / servers divider
-.tutorialContainer-1pL9QS + div[style] {
+.tutorialContainer__890ea + div[style] {
     height: unset !important;
 }
-.guildSeparator-a4uisj {
+.guildSeparator_dcb3cc {
     background: linear-gradient(to right, transparent, transparentize(white, 0.5), transparent);
     height: 3px;
     width: $serveritem-width + 20px;
@@ -47,7 +47,7 @@
 }
 
 // Open folder background
-body #app-mount .guilds-2JjMmN [class*="expandedFolderBackground"] {
+body #app-mount .guilds__2b93a [class*="expandedFolderBackground"] {
     background: transparentize($tabs-blue, 0.5);
     border-radius: 4px;
     left: $serverspacing-width;
@@ -55,75 +55,75 @@ body #app-mount .guilds-2JjMmN [class*="expandedFolderBackground"] {
 }
 
 // Server / folder
-.listItem-3SmSlK {
+.listItem_fa7b36 {
     margin-bottom: $serverspacing-width;
     width: $serverlist-width;
 
-    .wrapper-2PSQCG,
-    .svg-2ifYOU {
+    .wrapper__3af0b,
+    .svg_ad7356 {
         width: $serveritem-width;
         height: $serveritem-width;
     }
 
-    .wrapper-2PSQCG {
+    .wrapper__3af0b {
         box-shadow: 1px 1px 3px 2px rgb(48, 99, 180);
     }
 
-    .svg-2ifYOU {
+    .svg_ad7356 {
         border-radius: 4px;
         border: 3px solid rgb(201, 213, 225);
         transition: border-color 0.2s ease-out;
     }
 
     // Upper badge
-    .base-3IDx3L {
+    .base__92a12 {
         background: orange;
         border-radius: 4px;
     }
 
     // Colour border based on read/unread
     // Has unread message
-    &:has(.item-2LIpTv[style*="height: 8px;"]) .svg-2ifYOU {
+    &:has(.item_f9d377[style*="height: 8px;"]) .svg_ad7356 {
         border-color: white;
     }
     // Has ping
-    &:has(.lowerBadge-3j0ZAg .numberBadge-37OJ3S) .svg-2ifYOU {
+    &:has(.lowerBadge__669e7 .numberBadge__50328) .svg_ad7356 {
         border-color: var(--status-danger);
     }
     // Hovered or current server
-    &:has(.item-2LIpTv[style*="height: 40px;"], .item-2LIpTv[style*="height: 20px;"]) .svg-2ifYOU {
+    &:has(.item_f9d377[style*="height: 40px;"], .item_f9d377[style*="height: 20px;"]) .svg_ad7356 {
         border-color: orange;
     }
-    .pill-2RsI5Q,
-    .pill-L_aLMQ {
+    .pill__6b31b,
+    .pill_d1140c {
         display: none;
     }
 }
 
 // DMs
-.tutorialContainer-1pL9QS {
+.tutorialContainer__890ea {
     margin-top: $serverspacing-width;
 }
 
 // Dragged server
-.dragInner-1CUBf_,
-.target-1eRTCg.dragOver-1OKbo2::before,
-.centerTarget-S6BLFQ.dragOver-1OKbo2::before {
+.dragInner_a23293,
+.target__47b05.dragOver__84b73::before,
+.centerTarget_dffece.dragOver__84b73::before {
     border-radius: 4px;
     background: $tabs-blue;
     box-shadow: none;
 }
 
-.target-1eRTCg.dragOver-1OKbo2::before {
+.target__47b05.dragOver__84b73::before {
     top: 0;
 }
-.centerTarget-S6BLFQ.dragOver-1OKbo2:before {
+.centerTarget_dffece.dragOver__84b73:before {
     top: 42px;
 }
 
 // Add server and public servers
-:is(.tutorialContainer-2jwoiB, .tutorialContainer-2jwoiB + .listItem-3SmSlK) {
-    .wrapper-2PSQCG {
+:is(.tutorialContainer_dc6fde, .tutorialContainer_dc6fde + .listItem_fa7b36) {
+    .wrapper__3af0b {
         width: auto;
         height: auto;
         box-shadow: none;
@@ -134,16 +134,16 @@ body #app-mount .guilds-2JjMmN [class*="expandedFolderBackground"] {
         }
     }
 
-    .svg-2ifYOU {
+    .svg_ad7356 {
         display: none;
     }
 }
-.wrapper-2PSQCG::before {
-    .tutorialContainer-2jwoiB & {
+.wrapper__3af0b::before {
+    .tutorialContainer_dc6fde & {
         content: "Add Server...";
     }
 
-    .tutorialContainer-2jwoiB + .listItem-3SmSlK & {
+    .tutorialContainer_dc6fde + .listItem_fa7b36 & {
         content: "Public Servers";
     }
 }

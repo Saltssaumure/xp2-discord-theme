@@ -1,11 +1,11 @@
 @use "../top/vars" as *;
 
 // Leave space for members list
-:is(.content-1jQy2l, .content-18rAwf):has(:is(.container-2o3qEW, .container-2vWgD2)) :is(.chatContent-3KubbW, .chatContent-2O4SXb) {
+.content__1a4fe:has(.container_b2ce9c) .chatContent__5dca8 {
     padding-right: $memberlist-width;
 }
 
 // Chat
-:is(.chatContent-3KubbW, .chatContent-2O4SXb) {
+.chatContent__5dca8 {
     background: var(--xp2-background-chat);
 }

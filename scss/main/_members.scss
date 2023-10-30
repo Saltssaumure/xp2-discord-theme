@@ -1,6 +1,6 @@
 @use "../top/vars" as *;
 
-:is(.container-2o3qEW, .container-2vWgD2) {
+.container_b2ce9c {
     position: absolute;
     inset: (-$minibar-height) 0 0 auto;
     height: auto;
@@ -20,30 +20,30 @@
         font-weight: bold;
     }
 
-    :is(.membersWrap-3NUR2t, .membersWrap-3GwLFp) {
+    .membersWrap__90226 {
         max-height: calc(100% - #{$minibar-height});
         border-left: 1px solid grey;
     }
 
-    :is(.membersWrap-3NUR2t, .membersWrap-3GwLFp),
-    :is(.members-3WRCEx, .members-2y1nVj) {
+    .membersWrap__90226,
+    .members__9f47b {
         width: $memberlist-width;
     }
 
-    .member-2gU6Ar {
+    .member_aa4760 {
         max-width: unset;
     }
 
-    :is(.member-48YF_l, .member-2iQhp7),
-    :is(.members-3WRCEx, .members-2y1nVj) {
+    .member_b44d5d,
+    .members__9f47b {
         background: var(--xp2-background);
     }
 
-    .name-3Vmqxm {
+    .name__16feb {
         font-weight: 600;
     }
 
-    :is(.membersGroup-2eiWxl, .membersGroup-2YoqY-) {
+    .membersGroup__85843 {
         padding: 14px 8px 8px 16px;
         text-transform: none;
         font-size: 16px;
