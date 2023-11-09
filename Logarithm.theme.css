@@ -4,27 +4,31 @@
  * @authorLink https://github.com/Saltssaumure
  * @description A fullscreen Windows XP style theme.
  * @license GPL-3.0
- * @version 1.0
+ * @version 1.3
  * @invite uy8nKQVatp
  * @source https://github.com/Saltssaumure/xp2-discord-theme
+ * @website https://saltssaumure.github.io/xp2-discord-theme
  * @donate https://ko-fi.com/saltssaumure
+ *
+ * @var color xp2-dark-background   "Background: Dark mode"   #000
+ * @var color xp2-dark-background-2 "Background 2: Dark mode" #112233
+ * @var color xp2-dark-text         "Text: Dark mode"         #FFF
+ *
+ * @var color xp2-day-background   "Background: Light mode"   #FFF
+ * @var color xp2-day-background-2 "Background 2: Light mode" #112233
+ * @var color xp2-day-text         "Text: Light mode"         #000
 */
 
 @import url("https://saltssaumure.github.io/xp2-discord-theme/xp2.min.css");
 
-/* See https://github.com/Saltssaumure/xp2-discord-theme#customisation for customisation settings. */
-:root {
-    /* Variables */
-}
-
 .theme-dark {
-    --xp2-background: black;
-    --xp2-background-2: rgb(17, 34, 51);
-    --xp2-text: white;
+    --xp2-background: var(--xp2-dark-background);
+    --xp2-background-2: var(--xp2-dark-background-2);
+    --xp2-text: var(--xp2-dark-text);
 }
 
 .theme-light {
-    --xp2-background: white;
-    --xp2-background-2: rgb(17, 34, 51);
-    --xp2-text: black;
+    --xp2-background: var(--xp2-day-background);
+    --xp2-background-2: var(--xp2-day-background-2);
+    --xp2-text: var(--xp2-day-text);
 }
