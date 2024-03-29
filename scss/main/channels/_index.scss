@@ -4,41 +4,41 @@
 @use "../../top/vars" as *;
 @use "../../top/channel";
 
-.sidebar_ded4b5 .container__590e2 {
+.sidebar_e031be .container__7e23c {
     background: var(--xp2-background);
     border-left: 1px solid grey;
 }
 
 // Mini bar
-.container__7c79d {
-    .header__104ca,
-    .header__104ca:hover {
+.container_f41675 {
+    .header__77c95,
+    .header__77c95:hover {
         background: $tabs-blue;
     }
 }
-.container__7c79d.bannerVisible__191f6 {
-    .header__104ca,
-    .header__104ca:hover {
+.container_f41675.bannerVisible_ef30fe {
+    .header__77c95,
+    .header__77c95:hover {
         background: transparentize($tabs-blue, 0.3);
     }
 }
 
 // Header text
-.headerContent_ee8727 {
+.headerContent__6fcc7 {
     color: white;
 }
 
 // Special channels (server guide, etc.)
-.containerDefault__3187b.wrapper__7bcde {
+.containerDefault_ae2ea4.wrapper__612a5 {
     margin-left: 0;
 
-    .link__95dc0 {
+    .link_ddbb36 {
         padding-left: 16px;
     }
 }
 
 // Category name
-.name__590d6 {
+.name__27f04 {
     background: var(--xp2-background-2);
     width: fit-content;
     text-transform: none;
@@ -50,7 +50,7 @@
 }
 
 // Channel icon
-.iconContainer__3f9b0 {
+.iconContainer__6a580 {
     opacity: 0;
     position: absolute;
     z-index: 1;
@@ -58,13 +58,13 @@
 }
 
 // Channel name
-.name__8d1ec {
+.name__4eb92 {
     text-decoration: underline;
     padding: 0 2px;
 
     // Bold when unread
-    .modeUnread_f74c03 &,
-    .modeUnread_f74c03:hover & {
+    .modeUnreadImportant__35358 &,
+    .modeUnreadImportant__35358:hover & {
         font-weight: 600;
     }
 
@@ -84,24 +84,24 @@
 }
 
 // Selected channel background
-.link__95dc0 {
-    .modeSelected__487d6 &,
-    .modeSelected__487d6:hover & {
+.link_ddbb36 {
+    .modeSelected__473f1 &,
+    .modeSelected__473f1:hover & {
         background: unset;
     }
 }
 // Selected / connected channel background
-.modeSelected__487d6,
-.modeSelected__487d6:hover,
-.modeConnected__1c02e,
-.modeConnected__1c02e:hover {
-    .name__8d1ec {
+.modeSelected__473f1,
+.modeSelected__473f1:hover,
+.modeConnected__52a8f,
+.modeConnected__52a8f:hover {
+    .name__4eb92 {
         background: $tabs-blue;
         color: white;
         font-weight: 500;
         flex: none;
     }
-    .children_a486f8 {
+    .children__563f2 {
         margin-left: auto;
     }
 }

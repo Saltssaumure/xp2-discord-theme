@@ -1,6 +1,6 @@
 @use "../top/vars" as *;
 
-.form__13a2c {
+.form_d8a4a1 {
     padding: 0;
     margin-top: -24px;
     pointer-events: none;
@@ -9,7 +9,7 @@
         display: none;
     }
 
-    .channelTextArea__2e60f {
+    .channelTextArea_c2094b {
         background: var(--xp2-background-2);
         margin-top: 24px;
         margin-bottom: 0;
@@ -26,26 +26,26 @@
         }
     }
 
-    .sansAttachButton__996a4 {
+    .sansAttachButton__5f863 {
         padding: 0 8px;
         gap: 8px;
 
-        &:has(.uploadInput_a6be39) {
+        &:has(.uploadInput_aa27e8) {
             padding-left: 0;
         }
     }
 
-    .textArea__74543 {
+    .textArea_a86690 {
         background: var(--xp2-background);
         box-shadow: inset 0 0 1px 1px grey;
 
-        .slateTextArea__0661c {
+        .slateTextArea_b19976 {
             padding: 10px;
         }
     }
 
     // Upload button
-    .attachButton_b1db83 {
+    .attachButton__56f98 {
         margin-left: unset;
         border: 1px solid $blue-select;
         border-radius: 4px;
@@ -53,7 +53,7 @@
             linear-gradient(transparentize($blue-select, 0.8), transparent 20%, transparent 80%, transparentize($blue-select, 0.7));
         padding: 8px;
 
-        .attachButtonInner__3ce2b {
+        .attachButtonInner__84c26 {
             display: none;
         }
 
@@ -64,7 +64,7 @@
     }
 
     // Typing / slowmode indicator
-    .base__512ed {
+    .base__06abc {
         top: 0;
     }
 }

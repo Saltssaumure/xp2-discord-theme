@@ -1,14 +1,14 @@
 @use "../top/vars" as *;
 @use "../top/box";
 
-.titleBar__01af6 {
+.titleBar__710b0 {
     @include box.windowTitle();
     margin-top: 0;
     position: absolute;
     inset: auto 0;
     z-index: 100;
 
-    .wordmarkWindows__05c46 {
+    .wordmarkWindows_ffbc5e {
         color: white;
         padding-top: 2px;
 
@@ -34,10 +34,10 @@
     }
 
     // Min / Max / Close buttons
-    .winButton__88672 {
+    .winButton_f17fb6 {
         @include box.windowButton(20px);
 
-        &.winButtonClose__73489 {
+        &.winButtonClose__6396d {
             @include box.windowButton(20px, $isRed: true);
         }
     }

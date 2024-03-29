@@ -6,15 +6,15 @@
     visibility: visible;
 }
 
-.scroller__1f96e::-webkit-scrollbar-track {
+.scroller_e412fe::-webkit-scrollbar-track {
     margin-bottom: 0;
 }
 
-.codeView__8b1ff::-webkit-scrollbar-track {
+.codeView_e4dd18::-webkit-scrollbar-track {
     margin: 0;
 }
 
-:not(.none__51a8f)::-webkit-scrollbar {
+:not(.none__7a473)::-webkit-scrollbar {
     border: 1px solid var(--xp2-background-hover);
     background: var(--xp2-background);
     width: 18px;
@@ -22,7 +22,7 @@
 }
 
 .thin_b1c063::-webkit-scrollbar-track,
-.auto_a48086::-webkit-scrollbar-track {
+.auto_a3c0bd::-webkit-scrollbar-track {
     border: 0;
 }
 
@@ -36,7 +36,7 @@
 
 // Thumb
 .thin_b1c063::-webkit-scrollbar-thumb,
-.auto_a48086::-webkit-scrollbar-thumb {
+.auto_a3c0bd::-webkit-scrollbar-thumb {
     @include scrollPiece;
 }
 

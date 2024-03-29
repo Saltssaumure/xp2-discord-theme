@@ -1,10 +1,10 @@
 @use "../../top/vars" as *;
 @use "../../top/box";
 
-.messagesPopoutWrap_b3b384 {
+.messagesPopoutWrap__10dd1 {
     @include box.windowBox($VERTICAL-OFFSET: 0);
 
-    .header_f5cc88 {
+    .header__21b33 {
         @include box.windowTitle;
     }
 }

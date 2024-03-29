@@ -1,6 +1,6 @@
 @use "../top/vars" as *;
 
-.container_b2ce9c {
+.container_f79ab4 {
     position: absolute;
     inset: (-$minibar-height) 0 0 auto;
     height: auto;
@@ -20,13 +20,13 @@
         font-weight: bold;
     }
 
-    .membersWrap__90226 {
+    .membersWrap__5ca6b {
         max-height: calc(100% - #{$minibar-height});
         border-left: 1px solid grey;
     }
 
-    .membersWrap__90226,
-    .members__9f47b {
+    .membersWrap__5ca6b,
+    .members__573eb {
         width: $memberlist-width;
     }
 
@@ -35,15 +35,15 @@
     }
 
     .member_b44d5d,
-    .members__9f47b {
+    .members__573eb {
         background: var(--xp2-background);
     }
 
-    .name__16feb {
+    .name__7afe8 {
         font-weight: 600;
     }
 
-    .membersGroup__85843 {
+    .membersGroup_cad095 {
         padding: 14px 8px 8px 16px;
         text-transform: none;
         font-size: 16px;

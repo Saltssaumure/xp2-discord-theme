@@ -8,23 +8,23 @@
     // Activity panel, see nav-task-bar
 
     // Voice connection
-    .container_d667ff {
+    .container_e1958d {
         background: $tabs-center-blue;
 
-        .rtcConnectionStatusLabel__7029b,
-        .rtcConnectionStatus__40882 .pingForeground_ac78df {
+        .rtcConnectionStatusLabel_c2abfa,
+        .rtcConnectionStatus_e749c4 .pingForeground__2b613 {
             color: white;
         }
     }
 
     // User info
-    .container_ca50b9 {
+    .container_debb33 {
         height: 52px;
         background: $tabs-blue;
         justify-content: space-between;
 
         // Settings as ref-accurate text
-        // .button__4f306:last-child {
+        // .button_ae40a4:last-child {
         //     color: white;
         //     width: auto;
         //     svg {
@@ -40,8 +40,8 @@
         // Settings as start button, see nav-task-bar
     }
 
-    .title__10613,
-    .subtext__8f869 {
+    .title__4a7a9,
+    .subtext_ce73b4 {
         color: white;
     }
 }
