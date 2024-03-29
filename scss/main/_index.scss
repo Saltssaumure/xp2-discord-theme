@@ -15,27 +15,27 @@
 @use "../top/vars" as *;
 
 // Titlebar
-.container__11d72 {
+.container__26baa {
     padding: 0 16px;
     --__header-bar-background: #{$tabs-center-blue};
 
     // Titlebar with members list open
-    .chat__52833:has(.container_b2ce9c) & {
+    .chat__52833:has(.container_f79ab4) & {
         padding-right: $memberlist-width + 16px;
     }
 
-    .children__32014 .iconWrapper_af9215 {
+    .children_cde9af .iconWrapper_de6cd1 {
         display: none;
     }
 
-    .title__9e2b0 {
+    .title__84e16 {
         color: white;
         &::before {
             content: "#";
         }
     }
 
-    .divider_c09b64 {
+    .divider_bdb894 {
         display: none;
     }
 

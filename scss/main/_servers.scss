@@ -8,34 +8,34 @@
 }
 
 // New message indicator
-.unreadMentionsIndicatorTop_ada847,
-.unreadMentionsIndicatorBottom_fdb943 {
+.unreadMentionsIndicatorTop__153ad,
+.unreadMentionsIndicatorBottom__9351c {
     padding: $serverspacing-width;
     width: $serverlist-width;
 }
 
-.unreadMentionsIndicatorTop_ada847 {
+.unreadMentionsIndicatorTop__153ad {
     padding-top: 0;
 }
 
-.unreadMentionsIndicatorBottom_fdb943 {
+.unreadMentionsIndicatorBottom__9351c {
     padding-bottom: 0;
 }
 
 // Folder, DMs icon, server icon
 .folder__17546,
 .folder__17546.hover__043de,
-.childWrapper__01b9c,
-.icon__0cbed {
+.childWrapper_a6ce15,
+.icon__11cf1 {
     background: linear-gradient(to bottom, $tabs-blue, $channels-blue);
     color: white;
 }
 
 // DMs / servers divider
-.tutorialContainer__890ea + div[style] {
+.tutorialContainer_b06ae6 + div[style] {
     height: unset !important;
 }
-.guildSeparator_dcb3cc {
+.guildSeparator__75928 {
     background: linear-gradient(to right, transparent, transparentize(white, 0.5), transparent);
     height: 3px;
     width: $serveritem-width + 20px;
@@ -55,43 +55,43 @@ body #app-mount .guilds__2b93a [class*="expandedFolderBackground"] {
 }
 
 // Server / folder
-.listItem_fa7b36 {
+.listItem__48528 {
     margin-bottom: $serverspacing-width;
     width: $serverlist-width;
 
-    .wrapper__3af0b,
-    .svg_ad7356 {
+    .wrapper__9916c,
+    .svg__34dd4 {
         width: $serveritem-width;
         height: $serveritem-width;
     }
 
-    .wrapper__3af0b {
+    .wrapper__9916c {
         box-shadow: 1px 1px 3px 2px rgb(48, 99, 180);
     }
 
-    .svg_ad7356 {
+    .svg__34dd4 {
         border-radius: 4px;
         border: 3px solid rgb(201, 213, 225);
         transition: border-color 0.2s ease-out;
     }
 
     // Upper badge
-    .base__92a12 {
+    .base__5ed84 {
         background: orange;
         border-radius: 4px;
     }
 
     // Colour border based on read/unread
     // Has unread message
-    &:has(.item_f9d377[style*="height: 8px;"]) .svg_ad7356 {
+    &:has(.item_f9d377[style*="height: 8px;"]) .svg__34dd4 {
         border-color: white;
     }
     // Has ping
-    &:has(.lowerBadge__669e7 .numberBadge__50328) .svg_ad7356 {
+    &:has(.lowerBadge_e89e22 .numberBadge__40d6f) .svg__34dd4 {
         border-color: var(--status-danger);
     }
     // Hovered or current server
-    &:has(.item_f9d377[style*="height: 40px;"], .item_f9d377[style*="height: 20px;"]) .svg_ad7356 {
+    &:has(.item_f9d377[style*="height: 40px;"], .item_f9d377[style*="height: 20px;"]) .svg__34dd4 {
         border-color: orange;
     }
     .pill__6b31b,
@@ -101,29 +101,29 @@ body #app-mount .guilds__2b93a [class*="expandedFolderBackground"] {
 }
 
 // DMs
-.tutorialContainer__890ea {
+.tutorialContainer_b06ae6 {
     margin-top: $serverspacing-width;
 }
 
 // Dragged server
-.dragInner_a23293,
-.target__47b05.dragOver__84b73::before,
-.centerTarget_dffece.dragOver__84b73::before {
+.dragInner_d5b34c,
+.target__2c5c2.dragOver_efabec::before,
+.centerTarget_ec3a01.dragOver_efabec::before {
     border-radius: 4px;
     background: $tabs-blue;
     box-shadow: none;
 }
 
-.target__47b05.dragOver__84b73::before {
+.target__2c5c2.dragOver_efabec::before {
     top: 0;
 }
-.centerTarget_dffece.dragOver__84b73:before {
+.centerTarget_ec3a01.dragOver_efabec:before {
     top: 42px;
 }
 
 // Add server and public servers
-:is(.tutorialContainer_dc6fde, .tutorialContainer_dc6fde + .listItem_fa7b36) {
-    .wrapper__3af0b {
+:is(.tutorialContainer__6835f, .tutorialContainer__6835f + .listItem__48528) {
+    .wrapper__9916c {
         width: auto;
         height: auto;
         box-shadow: none;
@@ -134,16 +134,16 @@ body #app-mount .guilds__2b93a [class*="expandedFolderBackground"] {
         }
     }
 
-    .svg_ad7356 {
+    .svg__34dd4 {
         display: none;
     }
 }
-.wrapper__3af0b::before {
-    .tutorialContainer_dc6fde & {
+.wrapper__9916c::before {
+    .tutorialContainer__6835f & {
         content: "Add Server...";
     }
 
-    .tutorialContainer_dc6fde + .listItem_fa7b36 & {
+    .tutorialContainer__6835f + .listItem__48528 & {
         content: "Public Servers";
     }
 }
