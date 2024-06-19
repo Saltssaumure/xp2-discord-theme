@@ -2,29 +2,29 @@
 @use "sass:math";
 
 // Servers sidebar
-.guilds__2b93a {
+.guilds_a4d4d9 {
     width: $serverlist-width;
     background: $channels-blue;
 }
 
 // New message indicator
-.unreadMentionsIndicatorTop__153ad,
-.unreadMentionsIndicatorBottom__9351c {
+.unreadMentionsIndicatorTop_fea3ef,
+.unreadMentionsIndicatorBottom_fea3ef {
     padding: $serverspacing-width;
     width: $serverlist-width;
 }
 
-.unreadMentionsIndicatorTop__153ad {
+.unreadMentionsIndicatorTop_fea3ef {
     padding-top: 0;
 }
 
-.unreadMentionsIndicatorBottom__9351c {
+.unreadMentionsIndicatorBottom_fea3ef {
     padding-bottom: 0;
 }
 
 // Folder, DMs icon, server icon
-.folder__17546,
-.folder__17546.hover__043de,
+.folder_bc7085,
+.folder_bc7085.hover_bc7085,
 .childWrapper_a6ce15,
 .icon__11cf1 {
     background: linear-gradient(to bottom, $tabs-blue, $channels-blue);
@@ -32,10 +32,10 @@
 }
 
 // DMs / servers divider
-.tutorialContainer_b06ae6 + div[style] {
+.tutorialContainer_f9623d + div[style] {
     height: unset !important;
 }
-.guildSeparator__75928 {
+.guildSeparator_d0c57e {
     background: linear-gradient(to right, transparent, transparentize(white, 0.5), transparent);
     height: 3px;
     width: $serveritem-width + 20px;
@@ -47,7 +47,7 @@
 }
 
 // Open folder background
-body #app-mount .guilds__2b93a [class*="expandedFolderBackground"] {
+body #app-mount .guilds_a4d4d9 [class*="expandedFolderBackground"] {
     background: transparentize($tabs-blue, 0.5);
     border-radius: 4px;
     left: $serverspacing-width;
@@ -55,21 +55,21 @@ body #app-mount .guilds__2b93a [class*="expandedFolderBackground"] {
 }
 
 // Server / folder
-.listItem__48528 {
+.listItem_c96c45 {
     margin-bottom: $serverspacing-width;
     width: $serverlist-width;
 
-    .wrapper__9916c,
-    .svg__34dd4 {
+    .wrapper_c5f96a,
+    .svg_c5f96a {
         width: $serveritem-width;
         height: $serveritem-width;
     }
 
-    .wrapper__9916c {
+    .wrapper_c5f96a {
         box-shadow: 1px 1px 3px 2px rgb(48, 99, 180);
     }
 
-    .svg__34dd4 {
+    .svg_c5f96a {
         border-radius: 4px;
         border: 3px solid rgb(201, 213, 225);
         transition: border-color 0.2s ease-out;
@@ -83,47 +83,47 @@ body #app-mount .guilds__2b93a [class*="expandedFolderBackground"] {
 
     // Colour border based on read/unread
     // Has unread message
-    &:has(.item_f9d377[style*="height: 8px;"]) .svg__34dd4 {
+    &:has(.item_fd07a3[style*="height: 8px;"]) .svg_c5f96a {
         border-color: white;
     }
     // Has ping
-    &:has(.lowerBadge_e89e22 .numberBadge__40d6f) .svg__34dd4 {
+    &:has(.lowerBadge_c5f96a .numberBadge__40d6f) .svg_c5f96a {
         border-color: var(--status-danger);
     }
     // Hovered or current server
-    &:has(.item_f9d377[style*="height: 40px;"], .item_f9d377[style*="height: 20px;"]) .svg__34dd4 {
+    &:has(.item_fd07a3[style*="height: 40px;"], .item_fd07a3[style*="height: 20px;"]) .svg_c5f96a {
         border-color: orange;
     }
-    .pill__6b31b,
-    .pill_d1140c {
+    .pill_a5ad63,
+    .pill_f9623d {
         display: none;
     }
 }
 
 // DMs
-.tutorialContainer_b06ae6 {
+.tutorialContainer_f9623d {
     margin-top: $serverspacing-width;
 }
 
 // Dragged server
-.dragInner_d5b34c,
-.target__2c5c2.dragOver_efabec::before,
-.centerTarget_ec3a01.dragOver_efabec::before {
+.dragInner_f734d8,
+.target_b7c66a.dragOver_b7c66a::before,
+.centerTarget_b7c66a.dragOver_b7c66a::before {
     border-radius: 4px;
     background: $tabs-blue;
     box-shadow: none;
 }
 
-.target__2c5c2.dragOver_efabec::before {
+.target_b7c66a.dragOver_b7c66a::before {
     top: 0;
 }
-.centerTarget_ec3a01.dragOver_efabec:before {
+.centerTarget_b7c66a.dragOver_b7c66a:before {
     top: 42px;
 }
 
 // Add server and public servers
-:is(.tutorialContainer__6835f, .tutorialContainer__6835f + .listItem__48528) {
-    .wrapper__9916c {
+:is(.tutorialContainer_c96c45, .tutorialContainer_c96c45 + .listItem_c96c45) {
+    .wrapper_c5f96a {
         width: auto;
         height: auto;
         box-shadow: none;
@@ -134,16 +134,16 @@ body #app-mount .guilds__2b93a [class*="expandedFolderBackground"] {
         }
     }
 
-    .svg__34dd4 {
+    .svg_c5f96a {
         display: none;
     }
 }
-.wrapper__9916c::before {
-    .tutorialContainer__6835f & {
+.wrapper_c5f96a::before {
+    .tutorialContainer_c96c45 & {
         content: "Add Server...";
     }
 
-    .tutorialContainer__6835f + .listItem__48528 & {
+    .tutorialContainer_c96c45 + .listItem_c96c45 & {
         content: "Public Servers";
     }
 }

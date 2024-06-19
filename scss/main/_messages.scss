@@ -1,11 +1,11 @@
 @use "../top/vars" as *;
 
 // Leave space for members list
-.content__01e65:has(.container_f79ab4) .chatContent_f087cb {
+.content_a7d72e:has(.container_cbd271) .chatContent_a7d72e {
     padding-right: $memberlist-width;
 }
 
 // Chat
-.chatContent_f087cb {
+.chatContent_a7d72e {
     background: var(--xp2-background-chat);
 }

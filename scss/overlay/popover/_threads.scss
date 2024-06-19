@@ -1,9 +1,9 @@
 @use "../../top/box";
 
-.container_f93da8 {
+.container_e664f3 {
     @include box.windowBox($VERTICAL-OFFSET: 0);
 
-    .header__6d44a {
+    .header_e664f3 {
         @include box.windowTitle;
     }
 }

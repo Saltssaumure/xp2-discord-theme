@@ -1,6 +1,6 @@
 @use "../top/vars" as *;
 
-.container_f79ab4 {
+.container_cbd271 {
     position: absolute;
     inset: (-$minibar-height) 0 0 auto;
     height: auto;
@@ -20,30 +20,30 @@
         font-weight: bold;
     }
 
-    .membersWrap__5ca6b {
+    .membersWrap_cbd271 {
         max-height: calc(100% - #{$minibar-height});
         border-left: 1px solid grey;
     }
 
-    .membersWrap__5ca6b,
-    .members__573eb {
+    .membersWrap_cbd271,
+    .members_cbd271 {
         width: $memberlist-width;
     }
 
-    .member_aa4760 {
+    .member_a31c43 {
         max-width: unset;
     }
 
-    .member_b44d5d,
-    .members__573eb {
+    .member_cbd271,
+    .members_cbd271 {
         background: var(--xp2-background);
     }
 
-    .name__7afe8 {
+    .name_e9f61e {
         font-weight: 600;
     }
 
-    .membersGroup_cad095 {
+    .membersGroup_cbd271 {
         padding: 14px 8px 8px 16px;
         text-transform: none;
         font-size: 16px;

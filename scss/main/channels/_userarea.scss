@@ -2,29 +2,29 @@
 @use "../../top/box";
 
 // User area
-.panels__58331 {
+.panels_a4d4d9 {
     z-index: unset;
 
     // Activity panel, see nav-task-bar
 
     // Voice connection
-    .container_e1958d {
+    .container_adcaac {
         background: $tabs-center-blue;
 
-        .rtcConnectionStatusLabel_c2abfa,
-        .rtcConnectionStatus_e749c4 .pingForeground__2b613 {
+        .rtcConnectionStatusLabel_c0cb95,
+        .rtcConnectionStatus_c0cb95 .pingForeground_c0cb95 {
             color: white;
         }
     }
 
     // User info
-    .container_debb33 {
+    .container_b2ca13 {
         height: 52px;
         background: $tabs-blue;
         justify-content: space-between;
 
         // Settings as ref-accurate text
-        // .button_ae40a4:last-child {
+        // .button_f67531:last-child {
         //     color: white;
         //     width: auto;
         //     svg {
@@ -40,8 +40,8 @@
         // Settings as start button, see nav-task-bar
     }
 
-    .title__4a7a9,
-    .subtext_ce73b4 {
+    .title_d1da5f,
+    .subtext_e06aad {
         color: white;
     }
 }

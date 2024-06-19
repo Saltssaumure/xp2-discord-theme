@@ -1,7 +1,7 @@
 @use "../top/vars" as *;
 @use "../top/box";
 
-.layers__1c917 > .baseLayer__2b890 {
+.layers_d4b6c5 > .baseLayer_d4b6c5 {
     top: $winbar-height;
     background: var(--xp2-background-2);
 
@@ -22,7 +22,7 @@
         height: $navbar-height;
     }
 
-    .container_d1f8f5 {
+    .container_a4d4d9 {
         height: calc(100vh - $navbar-height - $winbar-height - $taskbar-height);
     }
 
@@ -34,7 +34,7 @@
     }
 
     // User settings / start button
-    .container_debb33 .button_ae40a4:last-child {
+    .container_b2ca13 .button_f67531:last-child {
         z-index: 103;
         position: fixed;
         left: 0;
@@ -48,7 +48,7 @@
         height: $taskbar-height;
         border-radius: 0 15px 15px 0 / 0 100% 100% 0;
 
-        .contents__322f4 {
+        .contents_dd4f85 {
             display: none;
         }
 
@@ -76,7 +76,7 @@
     }
 
     // Activity
-    .activityPanel_b73e7a {
+    .activityPanel_a4d4d9 {
         z-index: 103;
         position: fixed;
         bottom: 4px;
@@ -92,7 +92,7 @@
         padding: 0 12px;
 
         // Logo
-        .gameIcon__5f62a {
+        .gameIcon_bf1a22 {
             box-sizing: border-box;
             height: 28px;
             width: 28px;
@@ -104,7 +104,7 @@
         }
 
         // Currently streaming
-        .liveBadge__26d23 {
+        .liveBadge_bf1a22 {
             background: $green-bright;
             height: 8px;
             width: 8px;
@@ -113,15 +113,15 @@
         }
 
         // Title
-        .info_c28002 {
+        .info_bf1a22 {
             margin-left: 4px;
-            .title__4a7a9 {
+            .title_d1da5f {
                 font-weight: normal;
             }
         }
 
         // Start/stop streaming
-        .button_ae40a4 {
+        .button_f67531 {
             height: 28px;
             width: 28px;
             visibility: hidden;
@@ -130,16 +130,16 @@
                 background: unset;
             }
         }
-        &:hover .button_ae40a4 {
+        &:hover .button_f67531 {
             visibility: visible;
         }
     }
 }
 
 // Toolbars including thread toolbars
-.toolbar__62fb5 {
+.toolbar_e44302 {
     // Icons
-    .iconWrapper_de6cd1 {
+    .iconWrapper_e44302 {
         display: flex;
         gap: 4px;
 
@@ -220,25 +220,25 @@
 }
 
 // Pinned / DMs / search etc. from original titlebar
-.title_d4ba1a .toolbar__62fb5 {
+.title_a7d72e .toolbar_e44302 {
     position: fixed;
     inset: $winbar-height 0 auto ($navbar-button-width + 10px) * 2;
     justify-content: flex-end;
     height: $navbar-height;
 
     // Search bar
-    .search__07df0 {
+    .search_ff5f90 {
         order: -1;
         flex: 2;
 
-        .searchBar__5a20a {
+        .searchBar_a46bef {
             background: white;
             border: 1px solid grey;
         }
     }
 
     // Icons
-    .iconWrapper_de6cd1 {
+    .iconWrapper_e44302 {
         &:has([d^="M22 12"], [d^="M18 9"], [d^="M21.178 1.70703"], [d^="M5.43309 21"], [d^="M7 12.001"])::after {
             color: var(--xp2-text);
         }
@@ -246,7 +246,7 @@
 }
 
 // Mic and headphones from user panel
-.panels__58331 .button_ae40a4:not(:last-child) {
+.panels_a4d4d9 .button_f67531:not(:last-child) {
     position: fixed;
     top: $winbar-height;
     left: 0;
@@ -276,6 +276,6 @@
     }
 }
 
-.platform-win .sidebar_e031be {
+.platform-win .sidebar_a4d4d9 {
     overflow: visible;
 }

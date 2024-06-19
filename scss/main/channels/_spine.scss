@@ -1,32 +1,32 @@
 @use "../../top/vars" as *;
 
 // Channels
-.wrapper__612a5 {
+.wrapper_d8bfb3 {
     border-radius: 0;
     padding-left: 0;
 
     // Threads
-    .typeThread__5fb37 & {
+    .typeThread_d8bfb3 & {
         margin-left: 32px;
         padding-left: 0;
     }
 }
 
 // Channel in category
-.containerDefault_e3b32b ~ .containerDefault_ae2ea4 {
+.containerDefault_a08117 ~ .containerDefault_f6f816 {
     margin-left: 16px;
 }
 
 // Thread in category
-.containerDefault_e3b32b ~ .container__342a0 {
+.containerDefault_a08117 ~ .container_e1e976 {
     margin-left: 24px;
 }
-.typeThread__5fb37.wrapper__612a5 {
+.typeThread_d8bfb3.wrapper_d8bfb3 {
     margin-left: 16px;
 }
 
 // Bring channels/threads closer together while maintaining original height
-.wrapper__612a5 {
+.wrapper_d8bfb3 {
     padding: 0;
 
     .mainContent-20q_Hp {
@@ -35,15 +35,15 @@
 }
 
 // Remove original spine on threads
-.spine__88e6d,
-.spineBorder__52981 {
+.spine_e1e976,
+.spineBorder_e1e976 {
     display: none;
 }
 
 // Respine time
 // Channels in categories, and channels in threadgroups
-:is(.containerDefault_e3b32b ~ .containerDefault_ae2ea4, .container__342a0 .containerDefault_ae2ea4) .wrapper__612a5::before,
-.voiceUser__629a5::before {
+:is(.containerDefault_a08117 ~ .containerDefault_f6f816, .container_e1e976 .containerDefault_f6f816) .wrapper_d8bfb3::before,
+.voiceUser_cdc675::before {
     content: "";
     display: block;
     align-self: flex-start;
@@ -58,11 +58,11 @@
 // Channels in threadgroups that are not the last channel
 // Users in voice channels that are not the last user
 :is(
-        .containerDefault_e3b32b ~ .containerDefault_ae2ea4:has(+ .containerDefault_ae2ea4, + .container__342a0 + .containerDefault_ae2ea4),
-        .container__342a0 .containerDefault_ae2ea4:not(:last-child)
+        .containerDefault_a08117 ~ .containerDefault_f6f816:has(+ .containerDefault_f6f816, + .container_e1e976 + .containerDefault_f6f816),
+        .container_e1e976 .containerDefault_f6f816:not(:last-child)
     ) {
     // New spine border
-    .wrapper__612a5 {
+    .wrapper_d8bfb3 {
         border-left: 1px dotted grey;
 
         // New spine
@@ -72,17 +72,17 @@
     }
 }
 // Voice user list
-.list__02208 {
+.list_a478e5 {
     margin-left: 8px;
     padding-left: 16px;
 
     // In parent followed by another channel
-    .containerDefault_e3b32b ~ .containerDefault_ae2ea4:has(+ .containerDefault_ae2ea4) & {
+    .containerDefault_a08117 ~ .containerDefault_f6f816:has(+ .containerDefault_f6f816) & {
         border-left: 1px dotted grey;
     }
 }
 // Voice user followed by another user
-.voiceUser__629a5:not(.overlap__6969e, :last-child) {
+.voiceUser_cdc675:not(.overlap_cdc675, :last-child) {
     border-left: 1px dotted grey;
     &::before {
         border-bottom: 1px dotted grey;
@@ -92,18 +92,18 @@
 // L-shaped spines
 // Channels that are the inversion of the above selector, still in category or threadgroup
 :is(
-        .containerDefault_e3b32b
-            ~ .containerDefault_ae2ea4:not(:has(+ .containerDefault_ae2ea4, + .container__342a0 + .containerDefault_ae2ea4)),
-        .container__342a0 .containerDefault_ae2ea4:last-child
+        .containerDefault_a08117
+            ~ .containerDefault_f6f816:not(:has(+ .containerDefault_f6f816, + .container_e1e976 + .containerDefault_f6f816)),
+        .container_e1e976 .containerDefault_f6f816:last-child
     ) {
-    .wrapper__612a5 {
+    .wrapper_d8bfb3 {
         &::before {
             border: dotted grey;
             border-width: 0 0 1px 1px;
         }
     }
 }
-.voiceUser__629a5:not(.overlap__6969e):last-child {
+.voiceUser_cdc675:not(.overlap_cdc675):last-child {
     &::before {
         border: dotted grey;
         border-width: 0 0 1px 1px;
@@ -111,6 +111,6 @@
 }
 
 // Thread group spines
-.container__342a0:has(+ .containerDefault_ae2ea4) {
+.container_e1e976:has(+ .containerDefault_f6f816) {
     border-left: 1px dotted grey;
 }

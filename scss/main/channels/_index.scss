@@ -4,53 +4,53 @@
 @use "../../top/vars" as *;
 @use "../../top/channel";
 
-.sidebar_e031be .container__7e23c {
+.sidebar_a4d4d9 .container_ee69e0 {
     background: var(--xp2-background);
     border-left: 1px solid grey;
 }
 
 // Mini bar
-.container_f41675 {
-    .header__77c95,
-    .header__77c95:hover {
+.container_fd6364 {
+    .header_fd6364,
+    .header_fd6364:hover {
         background: $tabs-blue;
     }
 }
-.container_f41675.bannerVisible_ef30fe {
-    .header__77c95,
-    .header__77c95:hover {
+.container_fd6364.bannerVisible_fd6364 {
+    .header_fd6364,
+    .header_fd6364:hover {
         background: transparentize($tabs-blue, 0.3);
     }
 }
 
 // Header text
-.headerContent__6fcc7 {
+.headerContent_fd6364 {
     color: white;
 }
 
 // Special channels (server guide, etc.)
-.containerDefault_ae2ea4.wrapper__612a5 {
+.containerDefault_f6f816.wrapper_d8bfb3 {
     margin-left: 0;
 
-    .link_ddbb36 {
+    .link_d8bfb3 {
         padding-left: 16px;
     }
 }
 
 // Category name
-.name__27f04 {
+.name_a08117 {
     background: var(--xp2-background-2);
     width: fit-content;
     text-transform: none;
 }
 
 // Unread pip
-.unread__48cf4 {
+.unread_d8bfb3 {
     display: none;
 }
 
 // Channel icon
-.iconContainer__6a580 {
+.iconContainer_d8bfb3 {
     opacity: 0;
     position: absolute;
     z-index: 1;
@@ -58,13 +58,13 @@
 }
 
 // Channel name
-.name__4eb92 {
+.name_d8bfb3 {
     text-decoration: underline;
     padding: 0 2px;
 
     // Bold when unread
-    .modeUnreadImportant__35358 &,
-    .modeUnreadImportant__35358:hover & {
+    .modeUnreadImportant_d8bfb3 &,
+    .modeUnreadImportant_d8bfb3:hover & {
         font-weight: 600;
     }
 
@@ -84,24 +84,24 @@
 }
 
 // Selected channel background
-.link_ddbb36 {
-    .modeSelected__473f1 &,
-    .modeSelected__473f1:hover & {
+.link_d8bfb3 {
+    .modeSelected_d8bfb3 &,
+    .modeSelected_d8bfb3:hover & {
         background: unset;
     }
 }
 // Selected / connected channel background
-.modeSelected__473f1,
-.modeSelected__473f1:hover,
-.modeConnected__52a8f,
-.modeConnected__52a8f:hover {
-    .name__4eb92 {
+.modeSelected_d8bfb3,
+.modeSelected_d8bfb3:hover,
+.modeConnected_d8bfb3,
+.modeConnected_d8bfb3:hover {
+    .name_d8bfb3 {
         background: $tabs-blue;
         color: white;
         font-weight: 500;
         flex: none;
     }
-    .children__563f2 {
+    .children_d8bfb3 {
         margin-left: auto;
     }
 }
