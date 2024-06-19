@@ -1,6 +1,6 @@
 @mixin icon($ICON, $PATHS...) {
     @each $path in $PATHS {
-        .wrapper__612a5:has(path[d^="#{$path}"]) & {
+        .wrapper_d8bfb3:has(path[d^="#{$path}"]) & {
             content: $ICON;
         }
     }
